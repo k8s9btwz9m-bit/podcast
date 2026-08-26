@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>YouTube</title>
+    <description>Video singoli aggiunti a mano da YouTube.</description>
+    <link>https://www.youtube.com/channel/</link>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Aug 2026 14:58:12 +0000</lastBuildDate>
+    <atom:link href="https://k8s9btwz9m-bit.github.io/podcast/youtube.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://k8s9btwz9m-bit.github.io/podcast/cover-youtube.jpg</url>
+      <title>YouTube</title>
+      <link>https://www.youtube.com/channel/</link>
+    </image>
+    <itunes:author>Matteo Ciccone</itunes:author>
+    <itunes:summary>Video singoli aggiunti a mano da YouTube.</itunes:summary>
+    <itunes:image href="https://k8s9btwz9m-bit.github.io/podcast/cover-youtube.jpg"/>
+    <itunes:category text="Science"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Toy Story 5...?</title>
+      <description>[Alex Meyers]
+
+Go to https://surfshark.com/meyers or use code MEYERS at checkout to get 4 extra months of Surfshark!
+
+watch my other Toy Story videos:
+
+Toy Story
+https://youtu.be/z8O82PUEW-I
+
+Toy Story 2
+https://youtu.be/0dDtX6j1X1U
+
+Toy Story 3
+https://youtu.be/Q6g6rl89VKE
+
+Toy Story 4
+https://youtu.be/1EKW6SnbPbs
+
+Character Doodles by:
+https://www.instagram.com/mafer.zan
+
+join my patreon because Youtube copyright is INSANELY unfair
+https://www.patreon.com/cw/u303858
+
+follow me on instagram pls
+https://www.instagram.com/alexmeyers001
+
+★☆★ Help Me Get to 5,000,000 Subscribers! http://bit.ly/1Iqsdaq
+
+★☆★PLEASE SHARE THIS VIDEO!!</description>
+      <itunes:summary>[Alex Meyers]
+
+Go to https://surfshark.com/meyers or use code MEYERS at checkout to get 4 extra months of Surfshark!
+
+watch my other Toy Story videos:
+
+Toy Story
+https://youtu.be/z8O82PUEW-I
+
+Toy Story 2
+https://youtu.be/0dDtX6j1X1U
+
+Toy Story 3
+https://youtu.be/Q6g6rl89VKE
+
+Toy Story 4
+https://youtu.be/1EKW6SnbPbs
+
+Character Doodles by:
+https://www.instagram.com/mafer.zan
+
+join my patreon because Youtube copyright is INSANELY unfair
+https://www.patreon.com/cw/u303858
+
+follow me on instagram pls
+https://www.instagram.com/alexmeyers001
+
+★☆★ Help Me Get to 5,000,000 Subscribers! http://bit.ly/1Iqsdaq
+
+★☆★PLEASE SHARE THIS VIDEO!!</itunes:summary>
+      <pubDate>Fri, 21 Aug 2026 07:15:55 +0000</pubDate>
+      <guid isPermaLink="false">yt-9rOTRKuWcVw</guid>
+      <link>https://www.youtube.com/watch?v=9rOTRKuWcVw</link>
+      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/youtube/9rOTRKuWcVw.mp3" length="12389906" type="audio/mpeg"/>
+      <itunes:duration>00:35:59</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>

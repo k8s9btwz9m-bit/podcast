@@ -1,0 +1,40 @@
+===== 2026-07-26 22:23 - https://www.youtube.com/watch?v=en2WMT0VWAA
+Creato il podcast "YouTube" per i video singoli.
+  feed: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+  copertina attesa in docs/cover-youtube.jpg
+Leggo i dati del video ...
+  Breezy returns to get flambéed on the Nativity story before pulling a runner
+  DZ Debates — 00:18:26
+    scarico en2WMT0VWAA ...
+
+Aggiunto a "YouTube" (1 episodi).
+Ora lancia: python3 yt2podcast.py
+
+>> Planet Peterson  [planet-peterson]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/planet-peterson.xml (4 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (1 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dz-debates.xml (3 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 311 MB (limite impostato: 700 MB)
+===== 2026-07-26 22:34 - https://youtu.be/yMP3ZxUWOaQ?is=FjoSEN3Ab0P2sEJ8
+Leggo i dati del video ...
+  Most Least Non-Incoherent Guest Ever
+  Planet Peterson Clips — 00:19:50
+    scarico yMP3ZxUWOaQ ...

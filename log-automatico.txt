@@ -1,0 +1,458 @@
+/bin/bash: /Users/Matteo/Documents/App/Podcast/aggiorna-auto.sh: Operation not permitted
+===== 2026-08-21 08:55 =====
+
+>> Planet Peterson  [planet-peterson]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    feed RSS non disponibile (HTTP Error 500: Internal Server Error); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    feed RSS non disponibile (HTTP Error 500: Internal Server Error); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 0 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (0 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 565 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-08-21 20:03 =====
+
+>> Planet Peterson  [planet-peterson]
+    15 video nel feed YouTube, 1 da scaricare
+    scarico EZ4WRkeW7xs ...
+    rimosso vecchio episodio: brOJp558fmI.mp3
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    15 video nel feed YouTube, 2 da scaricare
+    scarico TYRIgY7Z5Kw ...
+    scarico GJ-oOC0SFbM ...
+    rimosso vecchio episodio: 8YIpLecyFlQ.mp3
+    rimosso vecchio episodio: tXiMyuJyo9c.mp3
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 598 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-08-22 08:00 =====
+
+>> Planet Peterson  [planet-peterson]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 598 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-08-22 20:47 =====
+
+>> Planet Peterson  [planet-peterson]
+    15 video nel feed YouTube, 2 da scaricare
+    scarico gLr-XtNdx8c ...
+    scarico VdMolfURAEY ...
+    rimosso vecchio episodio: eCkjjzJoPag.mp3
+    rimosso vecchio episodio: MlC4Uu1R43E.mp3
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    15 video nel feed YouTube, 1 da scaricare
+    scarico P_8lE0migwk ...
+    rimosso vecchio episodio: mrC70VHUksE.mp3
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    15 video nel feed YouTube, 2 da scaricare
+    scarico DuH5yY3AxWs ...
+    scarico u2WfScp_YAU ...
+    saltato u2WfScp_YAU ([download] LIVE DEBATE [God is Imaginary] 8-21-2026 does not pass filter (!is_live & duration > 120 & duration < 7200), skipping ..)
+    rimosso vecchio episodio: gs0bZUvQU-4.mp3
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 639 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-08-23 08:07 =====
+
+>> Planet Peterson  [planet-peterson]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 630 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-08-23 20:00 =====
+
+>> Planet Peterson  [planet-peterson]
+    15 video nel feed YouTube, 1 da scaricare
+    scarico uWeUz_Cjmwo ...
+    saltato uWeUz_Cjmwo ([download] Guest loves the sound of his own voice does not pass filter (!is_live & duration > 120 & duration < 7200), skipping ..)
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    15 video nel feed YouTube, 1 da scaricare
+    scarico T6XW1wS40Oo ...
+    rimosso vecchio episodio: BW7xuy9e3yM.mp3
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 643 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-08-24 08:00 =====
+
+>> Planet Peterson  [planet-peterson]
+    15 video nel feed YouTube, 2 da scaricare
+    scarico bGrb_U3uQvs ...
+    scarico P8o10HeNJdo ...
+    rimosso vecchio episodio: pZaSxDnhGu0.mp3
+    rimosso vecchio episodio: mnmWypP7XLw.mp3
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 652 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-08-24 20:02 =====
+
+>> Planet Peterson  [planet-peterson]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    15 video nel feed YouTube, 2 da scaricare
+    scarico -AM4_s839pE ...
+    scarico 08ShWQoVX90 ...
+    rimosso vecchio episodio: AlTwmqvfUi4.mp3
+    rimosso vecchio episodio: yUdOwcOjTP8.mp3
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    15 video nel feed YouTube, 1 da scaricare
+    scarico nKChGQWKCjY ...
+    rimosso vecchio episodio: wan0LZLEax4.mp3
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 665 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-08-25 08:39 =====
+
+>> Planet Peterson  [planet-peterson]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 665 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-08-25 20:00 =====
+
+>> Planet Peterson  [planet-peterson]
+    15 video nel feed YouTube, 1 da scaricare
+    scarico ofTCh-8xyLc ...
+    rimosso vecchio episodio: tQu4tJIR83s.mp3
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    15 video nel feed YouTube, 1 da scaricare
+    scarico GqpNReol5Tw ...
+    rimosso vecchio episodio: kkUF8mBvRbc.mp3
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    15 video nel feed YouTube, 2 da scaricare
+    scarico ZW3viLuinps ...
+    scarico Yc2QZSQUZXM ...
+    rimosso vecchio episodio: 9Bsy3CVHEak.mp3
+    rimosso vecchio episodio: UK-1BXs0Ynk.mp3
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 694 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-08-26 08:00 =====
+
+>> Planet Peterson  [planet-peterson]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub
+    commit creato
+    repository: 694 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====

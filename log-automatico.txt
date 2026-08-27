@@ -532,3 +532,42 @@ Fatto.
   Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
   DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
   YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-08-27 20:02 =====
+
+>> Planet Peterson  [planet-peterson]
+    15 video nel feed YouTube, 1 da scaricare
+    scarico x2AeblyUysE ...
+    rimosso vecchio episodio: VdMolfURAEY.mp3
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    15 video nel feed YouTube, 3 da scaricare
+    scarico Yhdi4eW8Rpw ...
+    scarico Ta7hqqA1crc ...
+    saltato Ta7hqqA1crc (WARNING: [youtube] The read operation timed out. Retrying (1/3)...)
+    scarico hQweFLlpkP8 ...
+    rimosso vecchio episodio: P_8lE0migwk.mp3
+    rimosso vecchio episodio: TYRIgY7Z5Kw.mp3
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    15 video nel feed YouTube, 3 da scaricare
+    scarico w6Wu4fn9DO8 ...
+    saltato w6Wu4fn9DO8 ([download] Live Debate [God is Imaginary] does not pass filter (!is_live & duration > 120 & duration < 7200), skipping ..)
+    scarico 8voIB3Fi-7w ...
+    scarico znS4hLqElFY ...
+    saltato znS4hLqElFY ([download] LIVE DEBATE [God is Imaginary] 8-26-2026 does not pass filter (!is_live & duration > 120 & duration < 7200), skipping ..)
+    rimosso vecchio episodio: uPWraUr_LpQ.mp3
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub

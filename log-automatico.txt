@@ -653,3 +653,13 @@ pubblicato
     feed: docs/youtube.xml (1 episodi)
 
 Pubblicazione su GitHub
+    commit creato
+    repository: 297 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml

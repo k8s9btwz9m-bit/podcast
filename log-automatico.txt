@@ -812,3 +812,9 @@ PUSH FALLITO
     feed: docs/youtube.xml (1 episodi)
 
 Pubblicazione su GitHub
+    commit creato
+    repository: 333 MB (limite impostato: 700 MB)
+    push completato
+
+Fatto.
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml

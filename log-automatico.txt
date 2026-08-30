@@ -784,3 +784,31 @@ Fatto.
   Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
   DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
   YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+To https://github.com/k8s9btwz9m-bit/podcast.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at aafad94013e79b12e6fbc80bed2e4f0966810dca but expected 680e8b87fcae64995a8c6e176c16315406c48354)
+error: push di alcuni riferimenti su 'https://github.com/k8s9btwz9m-bit/podcast.git' non riuscito
+PUSH FALLITO
+===== fine =====
+===== 2026-08-30 20:06 =====
+
+>> Planet Peterson  [planet-peterson]
+    feed RSS non disponibile (<urlopen error [Errno 8] nodename nor servname provided, or not known>); provo con yt-dlp
+    nessun video ottenuto: salto questo canale
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    feed RSS non disponibile (<urlopen error [Errno 8] nodename nor servname provided, or not known>); provo con yt-dlp
+    nessun video ottenuto: salto questo canale
+
+>> Dan McClellan  [dan-mcclellan]
+    feed RSS non disponibile (<urlopen error [Errno 8] nodename nor servname provided, or not known>); provo con yt-dlp
+    nessun video ottenuto: salto questo canale
+
+>> DZ Debates  [dz-debates]
+    feed RSS non disponibile (<urlopen error [Errno 8] nodename nor servname provided, or not known>); provo con yt-dlp
+    nessun video ottenuto: salto questo canale
+
+>> YouTube  [youtube]
+    canale manuale: 1 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (1 episodi)
+
+Pubblicazione su GitHub

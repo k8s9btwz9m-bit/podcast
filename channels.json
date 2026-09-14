@@ -1,0 +1,58 @@
+{
+  "site_url": "https://k8s9btwz9m-bit.github.io/podcast",
+  "author": "Matteo Ciccone",
+  "language": "en",
+  "max_episodes": 7,
+  "audio_quality": "9",
+  "keep_files": false,
+  "channels": [
+    {
+      "id": "UCoI9lb-zX8bzSndrEqm1y7g",
+      "slug": "planet-peterson",
+      "title": "Planet Peterson",
+      "description": "Dibattiti e contenuti divulgativi su scienze naturali, biologia, evoluzione e geologia. Audio dei video del canale YouTube.",
+      "category": "Science",
+      "cover": "https://k8s9btwz9m-bit.github.io/podcast/cover-planet-peterson.jpg"
+    },
+    {
+      "id": "UCRuS9fWBnGbCzKdgcJp_owQ",
+      "slug": "dr-blitz-debunks",
+      "title": "Dr. Blitz Debunks",
+      "description": "Clip e debunking dal canale Dr. Blitz. Audio dei video del canale YouTube.",
+      "category": "Science",
+      "cover": "https://k8s9btwz9m-bit.github.io/podcast/cover-dr-blitz-debunks.jpg"
+    },
+    {
+      "id": "UCAAJCQ0FCqRmAEv95SyTfNg",
+      "slug": "dan-mcclellan",
+      "title": "Dan McClellan",
+      "description": "Audio dei video del canale YouTube Dan McClellan.",
+      "category": "Science",
+      "cover": "https://k8s9btwz9m-bit.github.io/podcast/cover-dan-mcclellan.jpg"
+    },
+    {
+      "id": "UCCnfG3MKRvo2E3csJTaOI2A",
+      "slug": "dz-debates",
+      "title": "DZ Debates",
+      "description": "Audio dei video del canale YouTube DZ Debates.",
+      "category": "Science",
+      "cover": "https://k8s9btwz9m-bit.github.io/podcast/cover-dz-debates.jpg"
+    },
+    {
+      "id": "",
+      "slug": "youtube",
+      "title": "YouTube",
+      "description": "Video singoli aggiunti a mano da YouTube.",
+      "category": "Science",
+      "cover": "https://k8s9btwz9m-bit.github.io/podcast/cover-youtube.jpg",
+      "manual": true,
+      "max_episodes": 50
+    }
+  ],
+  "min_duration_minutes": 2,
+  "max_duration_minutes": 120,
+  "max_repo_mb": 700,
+  "git_auto_push": true,
+  "default_category": "Science",
+  "mono": true
+}

@@ -2073,3 +2073,60 @@ Fatto.
   YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
 pubblicato
 ===== fine =====
+===== 2026-09-15 08:09 =====
+
+>> Planet Peterson  [planet-peterson]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 7 da scaricare
+    scarico XE_ZFRQMxzU ...
+    scarico GYL0tZE4X4E ...
+    scarico wcCcaeXTluQ ...
+    scarico 9SI46RYIRps ...
+    scarico qfLlodqr5GU ...
+    scarico m1Xx9nwq7DE ...
+    scarico 9ouaoe-9VCQ ...
+    rimosso vecchio episodio: XE_ZFRQMxzU.mp3
+    rimosso vecchio episodio: GYL0tZE4X4E.mp3
+    rimosso vecchio episodio: wcCcaeXTluQ.mp3
+    rimosso vecchio episodio: 9SI46RYIRps.mp3
+    rimosso vecchio episodio: qfLlodqr5GU.mp3
+    rimosso vecchio episodio: m1Xx9nwq7DE.mp3
+    rimosso vecchio episodio: 9ouaoe-9VCQ.mp3
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 6 da scaricare
+    scarico o88X011NgzQ ...
+    scarico vVUo-PEZcXs ...
+    scarico onZfwKjSpBg ...
+    saltato onZfwKjSpBg (ERROR: unable to download video data: HTTP Error 403: Forbidden)
+    scarico 5DuCLPe-yyY ...
+    scarico K0gXgl46AXg ...
+    scarico vAlPhEZM0Q4 ...
+    saltato vAlPhEZM0Q4 ([download] Tod Takes Us from Visions, to Fine-Tuning, to the Holographic Universe does not pass filter (!is_live & duration > 120 & duration < 7200), skipping ..)
+    rimosso vecchio episodio: o88X011NgzQ.mp3
+    rimosso vecchio episodio: vVUo-PEZcXs.mp3
+    rimosso vecchio episodio: 5DuCLPe-yyY.mp3
+    rimosso vecchio episodio: K0gXgl46AXg.mp3
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 2 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (2 episodi)
+
+Pubblicazione su GitHub

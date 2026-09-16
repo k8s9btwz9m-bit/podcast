@@ -2183,3 +2183,54 @@ Fatto.
   Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
   DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
   YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-09-16 08:00 =====
+
+>> Planet Peterson  [planet-peterson]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 1 da scaricare
+    scarico sKW3J3FPyYs ...
+    rimosso vecchio episodio: sKW3J3FPyYs.mp3
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 7 da scaricare
+    scarico qErAafrzs6M ...
+    scarico pEEVaY0iCDc ...
+    scarico JUpJhaTuyf8 ...
+    scarico vzVNPH05Qes ...
+    scarico 4MgxsdsNR1U ...
+    scarico k1JT7yusl8k ...
+    scarico YnGDJ_cW3pM ...
+    rimosso vecchio episodio: qErAafrzs6M.mp3
+    rimosso vecchio episodio: pEEVaY0iCDc.mp3
+    rimosso vecchio episodio: JUpJhaTuyf8.mp3
+    rimosso vecchio episodio: vzVNPH05Qes.mp3
+    rimosso vecchio episodio: 4MgxsdsNR1U.mp3
+    rimosso vecchio episodio: k1JT7yusl8k.mp3
+    rimosso vecchio episodio: YnGDJ_cW3pM.mp3
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 1 da scaricare
+    scarico GDX07HYavNQ ...
+    rimosso vecchio episodio: GDX07HYavNQ.mp3
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 2 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (2 episodi)
+
+Pubblicazione su GitHub

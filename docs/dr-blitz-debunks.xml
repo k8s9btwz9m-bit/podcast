@@ -7,7 +7,7 @@
     <description>Clip e debunking dal canale Dr. Blitz. Audio dei video del canale YouTube.</description>
     <link>https://www.youtube.com/channel/UCRuS9fWBnGbCzKdgcJp_owQ</link>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Sep 2026 06:51:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 18:00:26 +0000</lastBuildDate>
     <atom:link href="https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://k8s9btwz9m-bit.github.io/podcast/cover-dr-blitz-debunks.jpg</url>
@@ -20,6 +20,54 @@
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Br*tish MAGAt self-owns in anti-science tirade</title>
+      <description>I don't really understand why he thought he was not anti-science. Recorded 9/3/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</description>
+      <itunes:summary>I don't really understand why he thought he was not anti-science. Recorded 9/3/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</itunes:summary>
+      <pubDate>Thu, 17 Sep 2026 14:00:18 +0000</pubDate>
+      <guid isPermaLink="false">yt-mLZ9jPFmUME</guid>
+      <link>https://www.youtube.com/watch?v=mLZ9jPFmUME</link>
+      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/mLZ9jPFmUME.mp3" length="10317035" type="audio/mpeg"/>
+      <itunes:duration>00:31:18</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Theist offers greatest (worst) hits of theism</title>
       <description>He went bar-for-bar on all of the standard theism arguments. No original thought here. Recorded 9/7/2026.
@@ -305,54 +353,6 @@ Linktree: https://linktr.ee/drblitzphd</itunes:summary>
       <link>https://www.youtube.com/watch?v=zQL0vayKCcg</link>
       <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/zQL0vayKCcg.mp3" length="16130647" type="audio/mpeg"/>
       <itunes:duration>00:53:50</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Flat earther thinks THOUGHTS are body parts</title>
-      <description>I thought I was very clever with the knee-bone and the thought-bone. Recorded 8/31/2026.
-
------------------------------
-
-MAIN CHANNEL
-https://www.youtube.com/@blitzphd
------------------------------
-WEBSITE
-https://blitz.phd
------------------------------
-SUPPORT STREAM:
-https://cash.app/$blitzphd
-https://buymeacoffee.com/drblitzphd
------------------------------
-SOCIAL MEDIA:
-TikTok: https://www.tiktok.com/@blitzphd
-Instagram: https://www.instagram.com/blitzphd/
-Discord: https://discord.com/invite/cj5ZFU6Afx
-Linktree: https://linktr.ee/drblitzphd</description>
-      <itunes:summary>I thought I was very clever with the knee-bone and the thought-bone. Recorded 8/31/2026.
-
------------------------------
-
-MAIN CHANNEL
-https://www.youtube.com/@blitzphd
------------------------------
-WEBSITE
-https://blitz.phd
------------------------------
-SUPPORT STREAM:
-https://cash.app/$blitzphd
-https://buymeacoffee.com/drblitzphd
------------------------------
-SOCIAL MEDIA:
-TikTok: https://www.tiktok.com/@blitzphd
-Instagram: https://www.instagram.com/blitzphd/
-Discord: https://discord.com/invite/cj5ZFU6Afx
-Linktree: https://linktr.ee/drblitzphd</itunes:summary>
-      <pubDate>Thu, 10 Sep 2026 14:00:17 +0000</pubDate>
-      <guid isPermaLink="false">yt-P8qyY8RluZI</guid>
-      <link>https://www.youtube.com/watch?v=P8qyY8RluZI</link>
-      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/P8qyY8RluZI.mp3" length="14613977" type="audio/mpeg"/>
-      <itunes:duration>00:48:26</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>

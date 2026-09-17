@@ -2340,3 +2340,34 @@ Fatto.
   Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
   DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
   YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml
+pubblicato
+===== fine =====
+===== 2026-09-17 20:00 =====
+
+>> Planet Peterson  [planet-peterson]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    15 video nel feed YouTube, 2 da scaricare
+    scarico MPzzTyl9ZV0 ...
+    saltato MPzzTyl9ZV0 ([download] GOD vs. SCIENTIST - Debate Dr. Blitz [9/17/2026] [H] 2026-09-17 20:00 does not pass filter (!is_live & duration > 120 & duration < 7200), skipping ..)
+    scarico mLZ9jPFmUME ...
+    rimosso vecchio episodio: P8qyY8RluZI.mp3
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    15 video nel feed YouTube, 1 da scaricare
+    scarico qU5uBQrOCnA ...
+    rimosso vecchio episodio: nhf7ZZqrrOU.mp3
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    15 video nel feed YouTube, 0 da scaricare
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 2 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (2 episodi)
+
+Pubblicazione su GitHub

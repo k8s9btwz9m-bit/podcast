@@ -7,7 +7,7 @@
     <description>Clip e debunking dal canale Dr. Blitz. Audio dei video del canale YouTube.</description>
     <link>https://www.youtube.com/channel/UCRuS9fWBnGbCzKdgcJp_owQ</link>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Sep 2026 06:00:18 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 18:02:46 +0000</lastBuildDate>
     <atom:link href="https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://k8s9btwz9m-bit.github.io/podcast/cover-dr-blitz-debunks.jpg</url>
@@ -20,6 +20,54 @@
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Presuppositional apologist FAILS to track</title>
+      <description>They never can track. Recorded 9/17/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</description>
+      <itunes:summary>They never can track. Recorded 9/17/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</itunes:summary>
+      <pubDate>Thu, 24 Sep 2026 14:00:21 +0000</pubDate>
+      <guid isPermaLink="false">yt-NhtVWe9fd0s</guid>
+      <link>https://www.youtube.com/watch?v=NhtVWe9fd0s</link>
+      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/NhtVWe9fd0s.mp3" length="19968379" type="audio/mpeg"/>
+      <itunes:duration>01:02:46</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>"Doc" Pepper evolution denier needs his license revoked</title>
       <description>He wasn't a real doctor. But it's still funny. Recorded 9/14/2026.
@@ -279,18 +327,6 @@ Linktree: https://linktr.ee/drblitzphd</itunes:summary>
       <link>https://www.youtube.com/watch?v=jyqNOnzj2Yk</link>
       <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/jyqNOnzj2Yk.mp3" length="15817375" type="audio/mpeg"/>
       <itunes:duration>00:50:27</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Physicist debunks flat earth sun</title>
-      <description>So I make this argument against flat earthers pretty regularly, but my only calculation in the past was pretty simplified. Now I've done a lot more and worked out the details! #physics #sun #optics #flatearth #debunked</description>
-      <itunes:summary>So I make this argument against flat earthers pretty regularly, but my only calculation in the past was pretty simplified. Now I've done a lot more and worked out the details! #physics #sun #optics #flatearth #debunked</itunes:summary>
-      <pubDate>Fri, 18 Sep 2026 17:00:06 +0000</pubDate>
-      <guid isPermaLink="false">yt-2xah33OvZ-M</guid>
-      <link>https://www.youtube.com/watch?v=2xah33OvZ-M</link>
-      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/2xah33OvZ-M.mp3" length="1391528" type="audio/mpeg"/>
-      <itunes:duration>00:02:50</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>

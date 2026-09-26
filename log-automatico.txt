@@ -3153,3 +3153,20 @@ pubblicato
     feed: docs/youtube.xml (2 episodi)
 
 Pubblicazione su GitHub
+    commit creato
+    repository: 506 MB (limite impostato: 700 MB)
+    PUSH FALLITO:
+git push -u origin main fallito:
+error: RPC non riuscita; curl 55 Recv failure: Can't assign requested address
+send-pack: unexpected disconnect while reading sideband packet
+fatal: l'interlocutore remoto ha chiuso inaspettatamente la connessione
+Everything up-to-date
+    I file in locale sono a posto. Se il rifiuto e' 'fetch first',
+    guarda cosa manca con:  git log --oneline HEAD..origin/main
+
+Fatto.
+  Planet Peterson: https://k8s9btwz9m-bit.github.io/podcast/planet-peterson.xml
+  Dr. Blitz Debunks: https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml
+  Dan McClellan: https://k8s9btwz9m-bit.github.io/podcast/dan-mcclellan.xml
+  DZ Debates: https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml

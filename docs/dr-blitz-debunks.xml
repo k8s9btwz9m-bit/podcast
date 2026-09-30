@@ -7,7 +7,7 @@
     <description>Clip e debunking dal canale Dr. Blitz. Audio dei video del canale YouTube.</description>
     <link>https://www.youtube.com/channel/UCRuS9fWBnGbCzKdgcJp_owQ</link>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Sep 2026 06:01:01 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 18:02:14 +0000</lastBuildDate>
     <atom:link href="https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://k8s9btwz9m-bit.github.io/podcast/cover-dr-blitz-debunks.jpg</url>
@@ -20,6 +20,54 @@
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Theist CONVINCED of evolution?!</title>
+      <description>I have to give this kid (actually an adult) credit: he listened, and he was convinced. That takes a lot of maturity. Recorded 9/21/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</description>
+      <itunes:summary>I have to give this kid (actually an adult) credit: he listened, and he was convinced. That takes a lot of maturity. Recorded 9/21/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</itunes:summary>
+      <pubDate>Wed, 30 Sep 2026 14:00:04 +0000</pubDate>
+      <guid isPermaLink="false">yt-zkiseTQeCX0</guid>
+      <link>https://www.youtube.com/watch?v=zkiseTQeCX0</link>
+      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/zkiseTQeCX0.mp3" length="16521250" type="audio/mpeg"/>
+      <itunes:duration>00:51:51</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Condemn slavery challenge: impossible</title>
       <description>So like, he was a pretty nice guy. And he was trying really hard to not justify slavery, because he recognizes slavery is bad. But it's hard to defend when it's in your book. Recorded 9/17/2026.
@@ -279,54 +327,6 @@ If that doesn't work, there's also Buy Me a Coffee!  https://buymeacoffee.com/dr
       <link>https://www.youtube.com/watch?v=FrdB3CacZEo</link>
       <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/FrdB3CacZEo.mp3" length="26654386" type="audio/mpeg"/>
       <itunes:duration>01:30:57</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Evolution denier SPRINTS away with the goalposts</title>
-      <description>Millarepa did the meme. Recorded 9/14/2026.
-
------------------------------
-
-MAIN CHANNEL
-https://www.youtube.com/@blitzphd
------------------------------
-WEBSITE
-https://blitz.phd
------------------------------
-SUPPORT STREAM:
-https://cash.app/$blitzphd
-https://buymeacoffee.com/drblitzphd
------------------------------
-SOCIAL MEDIA:
-TikTok: https://www.tiktok.com/@blitzphd
-Instagram: https://www.instagram.com/blitzphd/
-Discord: https://discord.com/invite/cj5ZFU6Afx
-Linktree: https://linktr.ee/drblitzphd</description>
-      <itunes:summary>Millarepa did the meme. Recorded 9/14/2026.
-
------------------------------
-
-MAIN CHANNEL
-https://www.youtube.com/@blitzphd
------------------------------
-WEBSITE
-https://blitz.phd
------------------------------
-SUPPORT STREAM:
-https://cash.app/$blitzphd
-https://buymeacoffee.com/drblitzphd
------------------------------
-SOCIAL MEDIA:
-TikTok: https://www.tiktok.com/@blitzphd
-Instagram: https://www.instagram.com/blitzphd/
-Discord: https://discord.com/invite/cj5ZFU6Afx
-Linktree: https://linktr.ee/drblitzphd</itunes:summary>
-      <pubDate>Tue, 22 Sep 2026 14:00:17 +0000</pubDate>
-      <guid isPermaLink="false">yt-GOUAuj9ujLs</guid>
-      <link>https://www.youtube.com/watch?v=GOUAuj9ujLs</link>
-      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/GOUAuj9ujLs.mp3" length="7414382" type="audio/mpeg"/>
-      <itunes:duration>00:20:49</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>

@@ -7,7 +7,7 @@
     <description>Clip e debunking dal canale Dr. Blitz. Audio dei video del canale YouTube.</description>
     <link>https://www.youtube.com/channel/UCRuS9fWBnGbCzKdgcJp_owQ</link>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Oct 2026 06:00:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 18:01:26 +0000</lastBuildDate>
     <atom:link href="https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://k8s9btwz9m-bit.github.io/podcast/cover-dr-blitz-debunks.jpg</url>
@@ -20,6 +20,54 @@
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Flat earther REFUSES to be convinced</title>
+      <description>We went a lot of places, but at the end, even presented with an experiment he could do himself, he claims he won't be convinced. We'll see! Recorded 9/21/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</description>
+      <itunes:summary>We went a lot of places, but at the end, even presented with an experiment he could do himself, he claims he won't be convinced. We'll see! Recorded 9/21/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</itunes:summary>
+      <pubDate>Thu, 01 Oct 2026 14:00:29 +0000</pubDate>
+      <guid isPermaLink="false">yt-SqrTR_5arKE</guid>
+      <link>https://www.youtube.com/watch?v=SqrTR_5arKE</link>
+      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/SqrTR_5arKE.mp3" length="11668574" type="audio/mpeg"/>
+      <itunes:duration>00:36:06</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Theist CONVINCED of evolution?!</title>
       <description>I have to give this kid (actually an adult) credit: he listened, and he was convinced. That takes a lot of maturity. Recorded 9/21/2026.
@@ -305,28 +353,6 @@ Linktree: https://linktr.ee/drblitzphd</itunes:summary>
       <link>https://www.youtube.com/watch?v=XP4qocIl_xY</link>
       <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/XP4qocIl_xY.mp3" length="16797056" type="audio/mpeg"/>
       <itunes:duration>00:51:31</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>YOU vs. PHYSICS - Ask a Physicist with Dr. Blitz [9/22/2026] [H]</title>
-      <description>Want to know more about me? Check out my website: https://blitz.phd
-
-Like what you see? Come join my discord to join the community! https://discord.gg/drblitz
-
-Want to support me financially for some reason? https://cash.app/$blitzphd
-If that doesn't work, there's also Buy Me a Coffee!  https://buymeacoffee.com/drblitzphd</description>
-      <itunes:summary>Want to know more about me? Check out my website: https://blitz.phd
-
-Like what you see? Come join my discord to join the community! https://discord.gg/drblitz
-
-Want to support me financially for some reason? https://cash.app/$blitzphd
-If that doesn't work, there's also Buy Me a Coffee!  https://buymeacoffee.com/drblitzphd</itunes:summary>
-      <pubDate>Tue, 22 Sep 2026 15:52:36 +0000</pubDate>
-      <guid isPermaLink="false">yt-FrdB3CacZEo</guid>
-      <link>https://www.youtube.com/watch?v=FrdB3CacZEo</link>
-      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/FrdB3CacZEo.mp3" length="26654386" type="audio/mpeg"/>
-      <itunes:duration>01:30:57</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>

@@ -7,7 +7,7 @@
     <description>Clip e debunking dal canale Dr. Blitz. Audio dei video del canale YouTube.</description>
     <link>https://www.youtube.com/channel/UCRuS9fWBnGbCzKdgcJp_owQ</link>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Oct 2026 06:00:17 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 18:01:53 +0000</lastBuildDate>
     <atom:link href="https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://k8s9btwz9m-bit.github.io/podcast/cover-dr-blitz-debunks.jpg</url>
@@ -20,6 +20,54 @@
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Flat earther: human trafficking is just as bad as marrying your cousin</title>
+      <description>Look, two cousins marrying is gross, but come on. This is a terrible take. Recorded 9/21/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</description>
+      <itunes:summary>Look, two cousins marrying is gross, but come on. This is a terrible take. Recorded 9/21/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</itunes:summary>
+      <pubDate>Fri, 02 Oct 2026 14:00:38 +0000</pubDate>
+      <guid isPermaLink="false">yt-WRQm6OLdMKE</guid>
+      <link>https://www.youtube.com/watch?v=WRQm6OLdMKE</link>
+      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/WRQm6OLdMKE.mp3" length="11948263" type="audio/mpeg"/>
+      <itunes:duration>00:38:13</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Flat earther REFUSES to be convinced</title>
       <description>We went a lot of places, but at the end, even presented with an experiment he could do himself, he claims he won't be convinced. We'll see! Recorded 9/21/2026.
@@ -305,54 +353,6 @@ Linktree: https://linktr.ee/drblitzphd</itunes:summary>
       <link>https://www.youtube.com/watch?v=NhtVWe9fd0s</link>
       <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/NhtVWe9fd0s.mp3" length="19968379" type="audio/mpeg"/>
       <itunes:duration>01:02:46</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>"Doc" Pepper evolution denier needs his license revoked</title>
-      <description>He wasn't a real doctor. But it's still funny. Recorded 9/14/2026.
-
------------------------------
-
-MAIN CHANNEL
-https://www.youtube.com/@blitzphd
------------------------------
-WEBSITE
-https://blitz.phd
------------------------------
-SUPPORT STREAM:
-https://cash.app/$blitzphd
-https://buymeacoffee.com/drblitzphd
------------------------------
-SOCIAL MEDIA:
-TikTok: https://www.tiktok.com/@blitzphd
-Instagram: https://www.instagram.com/blitzphd/
-Discord: https://discord.com/invite/cj5ZFU6Afx
-Linktree: https://linktr.ee/drblitzphd</description>
-      <itunes:summary>He wasn't a real doctor. But it's still funny. Recorded 9/14/2026.
-
------------------------------
-
-MAIN CHANNEL
-https://www.youtube.com/@blitzphd
------------------------------
-WEBSITE
-https://blitz.phd
------------------------------
-SUPPORT STREAM:
-https://cash.app/$blitzphd
-https://buymeacoffee.com/drblitzphd
------------------------------
-SOCIAL MEDIA:
-TikTok: https://www.tiktok.com/@blitzphd
-Instagram: https://www.instagram.com/blitzphd/
-Discord: https://discord.com/invite/cj5ZFU6Afx
-Linktree: https://linktr.ee/drblitzphd</itunes:summary>
-      <pubDate>Wed, 23 Sep 2026 14:00:10 +0000</pubDate>
-      <guid isPermaLink="false">yt-XP4qocIl_xY</guid>
-      <link>https://www.youtube.com/watch?v=XP4qocIl_xY</link>
-      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/XP4qocIl_xY.mp3" length="16797056" type="audio/mpeg"/>
-      <itunes:duration>00:51:31</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>

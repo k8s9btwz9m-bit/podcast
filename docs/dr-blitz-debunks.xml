@@ -7,7 +7,7 @@
     <description>Clip e debunking dal canale Dr. Blitz. Audio dei video del canale YouTube.</description>
     <link>https://www.youtube.com/channel/UCRuS9fWBnGbCzKdgcJp_owQ</link>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Oct 2026 06:00:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 18:00:16 +0000</lastBuildDate>
     <atom:link href="https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://k8s9btwz9m-bit.github.io/podcast/cover-dr-blitz-debunks.jpg</url>
@@ -20,6 +20,54 @@
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Flat earther IMMEDIATELY crashes out then runs</title>
+      <description>He came in dumb and hot. Recorded 10/5/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</description>
+      <itunes:summary>He came in dumb and hot. Recorded 10/5/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</itunes:summary>
+      <pubDate>Wed, 14 Oct 2026 14:00:31 +0000</pubDate>
+      <guid isPermaLink="false">yt-Pkg-wQRg03U</guid>
+      <link>https://www.youtube.com/watch?v=Pkg-wQRg03U</link>
+      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/Pkg-wQRg03U.mp3" length="3833079" type="audio/mpeg"/>
+      <itunes:duration>00:10:15</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>MAGA thinks Republicans do REGULATION?</title>
       <description>How can he not know this? Recorded 10/1/2026.
@@ -305,28 +353,6 @@ Linktree: https://linktr.ee/drblitzphd</itunes:summary>
       <link>https://www.youtube.com/watch?v=QSoAq-cutB8</link>
       <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/QSoAq-cutB8.mp3" length="17962730" type="audio/mpeg"/>
       <itunes:duration>00:54:41</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>YOU vs. PHYSICS - Ask a Physicist with Dr. Blitz [10/6/2026] [H]</title>
-      <description>Want to know more about me? Check out my website: https://blitz.phd
-
-Like what you see? Come join my discord to join the community! https://discord.gg/drblitz
-
-Want to support me financially for some reason? https://cash.app/$blitzphd
-If that doesn't work, there's also Buy Me a Coffee!  https://buymeacoffee.com/drblitzphd</description>
-      <itunes:summary>Want to know more about me? Check out my website: https://blitz.phd
-
-Like what you see? Come join my discord to join the community! https://discord.gg/drblitz
-
-Want to support me financially for some reason? https://cash.app/$blitzphd
-If that doesn't work, there's also Buy Me a Coffee!  https://buymeacoffee.com/drblitzphd</itunes:summary>
-      <pubDate>Tue, 06 Oct 2026 16:22:41 +0000</pubDate>
-      <guid isPermaLink="false">yt-ANljLXm2fmM</guid>
-      <link>https://www.youtube.com/watch?v=ANljLXm2fmM</link>
-      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/ANljLXm2fmM.mp3" length="13099148" type="audio/mpeg"/>
-      <itunes:duration>00:44:38</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>

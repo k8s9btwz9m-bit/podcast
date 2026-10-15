@@ -4781,3 +4781,38 @@ Traceback (most recent call last):
     return self._sslobj.read(len, buffer)
            ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
 TimeoutError: The read operation timed out
+pubblicato
+===== fine =====
+===== 2026-10-15 08:00 =====
+
+>> Planet Peterson  [planet-peterson]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 1 da scaricare
+    scarico oJnj9JVls4A ...
+    rimosso vecchio episodio: oJnj9JVls4A.mp3
+    feed: docs/planet-peterson.xml (7 episodi)
+
+>> Dr. Blitz Debunks  [dr-blitz-debunks]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dr-blitz-debunks.xml (7 episodi)
+
+>> Dan McClellan  [dan-mcclellan]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dan-mcclellan.xml (7 episodi)
+
+>> DZ Debates  [dz-debates]
+    feed RSS non disponibile (HTTP Error 404: Not Found); provo con yt-dlp
+    ottenuti 30 video con yt-dlp
+    30 video nel feed YouTube, 0 da scaricare
+    feed: docs/dz-debates.xml (7 episodi)
+
+>> YouTube  [youtube]
+    canale manuale: 2 episodi, aggiunti a mano con --video
+    feed: docs/youtube.xml (2 episodi)
+
+Pubblicazione su GitHub

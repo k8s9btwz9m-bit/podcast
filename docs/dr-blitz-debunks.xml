@@ -7,7 +7,7 @@
     <description>Clip e debunking dal canale Dr. Blitz. Audio dei video del canale YouTube.</description>
     <link>https://www.youtube.com/channel/UCRuS9fWBnGbCzKdgcJp_owQ</link>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Oct 2026 06:00:10 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 18:00:31 +0000</lastBuildDate>
     <atom:link href="https://k8s9btwz9m-bit.github.io/podcast/dr-blitz-debunks.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://k8s9btwz9m-bit.github.io/podcast/cover-dr-blitz-debunks.jpg</url>
@@ -20,6 +20,54 @@
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Big bang denier calls ME Dunning-Kruger</title>
+      <description>The irony is crazy. Recorded 10/5/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</description>
+      <itunes:summary>The irony is crazy. Recorded 10/5/2026.
+
+-----------------------------
+
+MAIN CHANNEL
+https://www.youtube.com/@blitzphd
+-----------------------------
+WEBSITE
+https://blitz.phd
+-----------------------------
+SUPPORT STREAM:
+https://cash.app/$blitzphd
+https://buymeacoffee.com/drblitzphd
+-----------------------------
+SOCIAL MEDIA:
+TikTok: https://www.tiktok.com/@blitzphd
+Instagram: https://www.instagram.com/blitzphd/
+Discord: https://discord.com/invite/cj5ZFU6Afx
+Linktree: https://linktr.ee/drblitzphd</itunes:summary>
+      <pubDate>Sat, 17 Oct 2026 14:00:08 +0000</pubDate>
+      <guid isPermaLink="false">yt-orgEKmvW7-A</guid>
+      <link>https://www.youtube.com/watch?v=orgEKmvW7-A</link>
+      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/orgEKmvW7-A.mp3" length="14331498" type="audio/mpeg"/>
+      <itunes:duration>00:45:42</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Moon-landing denier WELCHES on bet</title>
       <description>He was so confident. Then he ran. Recorded 10/5/2026.
@@ -305,54 +353,6 @@ Linktree: https://linktr.ee/drblitzphd</itunes:summary>
       <link>https://www.youtube.com/watch?v=dMF0gMAHJZ0</link>
       <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/dMF0gMAHJZ0.mp3" length="10022628" type="audio/mpeg"/>
       <itunes:duration>00:31:10</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Christian tries to read SCIENCE into GENESIS</title>
-      <description>He tried for like 40 minutes to try to make Genesis correct. Recorded 9/25/2026.
-
------------------------------
-
-MAIN CHANNEL
-https://www.youtube.com/@blitzphd
------------------------------
-WEBSITE
-https://blitz.phd
------------------------------
-SUPPORT STREAM:
-https://cash.app/$blitzphd
-https://buymeacoffee.com/drblitzphd
------------------------------
-SOCIAL MEDIA:
-TikTok: https://www.tiktok.com/@blitzphd
-Instagram: https://www.instagram.com/blitzphd/
-Discord: https://discord.com/invite/cj5ZFU6Afx
-Linktree: https://linktr.ee/drblitzphd</description>
-      <itunes:summary>He tried for like 40 minutes to try to make Genesis correct. Recorded 9/25/2026.
-
------------------------------
-
-MAIN CHANNEL
-https://www.youtube.com/@blitzphd
------------------------------
-WEBSITE
-https://blitz.phd
------------------------------
-SUPPORT STREAM:
-https://cash.app/$blitzphd
-https://buymeacoffee.com/drblitzphd
------------------------------
-SOCIAL MEDIA:
-TikTok: https://www.tiktok.com/@blitzphd
-Instagram: https://www.instagram.com/blitzphd/
-Discord: https://discord.com/invite/cj5ZFU6Afx
-Linktree: https://linktr.ee/drblitzphd</itunes:summary>
-      <pubDate>Fri, 09 Oct 2026 14:00:34 +0000</pubDate>
-      <guid isPermaLink="false">yt-BqK37WWdQVM</guid>
-      <link>https://www.youtube.com/watch?v=BqK37WWdQVM</link>
-      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dr-blitz-debunks/BqK37WWdQVM.mp3" length="13129031" type="audio/mpeg"/>
-      <itunes:duration>00:41:14</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>

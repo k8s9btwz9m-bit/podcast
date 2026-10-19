@@ -5199,3 +5199,13 @@ pubblicato
     feed: docs/youtube.xml (2 episodi)
 
 Pubblicazione su GitHub
+    commit creato
+    repository: 403 MB (limite impostato: 700 MB)
+    PUSH FALLITO:
+git push -u origin main fallito:
+fatal: impossibile accedere a 'https://github.com/k8s9btwz9m-bit/podcast.git/': Could not resolve host: github.com
+    I file in locale sono a posto. Se il rifiuto e' 'fetch first',
+    guarda cosa manca con:  git log --oneline HEAD..origin/main
+
+Fatto.
+  YouTube: https://k8s9btwz9m-bit.github.io/podcast/youtube.xml

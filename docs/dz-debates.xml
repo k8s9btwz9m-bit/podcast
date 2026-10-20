@@ -7,7 +7,7 @@
     <description>Audio dei video del canale YouTube DZ Debates.</description>
     <link>https://www.youtube.com/channel/UCCnfG3MKRvo2E3csJTaOI2A</link>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Oct 2026 06:06:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 18:03:10 +0000</lastBuildDate>
     <atom:link href="https://k8s9btwz9m-bit.github.io/podcast/dz-debates.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://k8s9btwz9m-bit.github.io/podcast/cover-dz-debates.jpg</url>
@@ -20,6 +20,56 @@
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Incredulity Still Isn't an Argument</title>
+      <description>JOIN TO GET CHEATSHEET/PERKS
+https://www.youtube.com/@DZDebates/join
+---------------------------------------------
+MAIN CHANNEL
+https://www.youtube.com/@Deconstruction_Zone
+---------------------------------------------
+SUPPORT STREAM:
+https://venmo.com/u/JHCOFFEEFUND
+https://www.paypal.com/paypalme/JHCOFFEEFUND
+https://cash.app/$JHCOFFEEFUND
+https://www.patreon.com/Deconstruction_Zone
+---------------------------------------------
+SOCIAL MEDIA:
+https://www.tiktok.com/@deconstruction.zone
+https://www.twitch.tv/deconstructionzone_
+https://www.youtube.com/@Deconstruction_Zone
+https://www.youtube.com/@DZDebates
+https://www.instagram.com/deconstruction_zone/
+https://discord.com/invite/WmeAmrhkxZ
+https://linktr.ee/justin_____</description>
+      <itunes:summary>JOIN TO GET CHEATSHEET/PERKS
+https://www.youtube.com/@DZDebates/join
+---------------------------------------------
+MAIN CHANNEL
+https://www.youtube.com/@Deconstruction_Zone
+---------------------------------------------
+SUPPORT STREAM:
+https://venmo.com/u/JHCOFFEEFUND
+https://www.paypal.com/paypalme/JHCOFFEEFUND
+https://cash.app/$JHCOFFEEFUND
+https://www.patreon.com/Deconstruction_Zone
+---------------------------------------------
+SOCIAL MEDIA:
+https://www.tiktok.com/@deconstruction.zone
+https://www.twitch.tv/deconstructionzone_
+https://www.youtube.com/@Deconstruction_Zone
+https://www.youtube.com/@DZDebates
+https://www.instagram.com/deconstruction_zone/
+https://discord.com/invite/WmeAmrhkxZ
+https://linktr.ee/justin_____</itunes:summary>
+      <pubDate>Tue, 20 Oct 2026 16:12:26 +0000</pubDate>
+      <guid isPermaLink="false">yt-xK_V0Ubc7jY</guid>
+      <link>https://www.youtube.com/watch?v=xK_V0Ubc7jY</link>
+      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dz-debates/xK_V0Ubc7jY.mp3" length="7977108" type="audio/mpeg"/>
+      <itunes:duration>00:23:39</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>LIVE DEBATE [God is Imaginary, etc..] 10-16-2026 [H] (Last Guest)</title>
       <description>JOIN THE DEBATE
@@ -315,56 +365,6 @@ https://linktr.ee/justin_____</itunes:summary>
       <link>https://www.youtube.com/watch?v=3Gk9wY7-pqw</link>
       <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dz-debates/3Gk9wY7-pqw.mp3" length="5309521" type="audio/mpeg"/>
       <itunes:duration>00:15:37</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Christian Hits Us With Weapons-Grade Shower Thoughts</title>
-      <description>JOIN TO GET CHEATSHEET/PERKS
-https://www.youtube.com/@DZDebates/join
----------------------------------------------
-MAIN CHANNEL
-https://www.youtube.com/@Deconstruction_Zone
----------------------------------------------
-SUPPORT STREAM:
-https://venmo.com/u/JHCOFFEEFUND
-https://www.paypal.com/paypalme/JHCOFFEEFUND
-https://cash.app/$JHCOFFEEFUND
-https://www.patreon.com/Deconstruction_Zone
----------------------------------------------
-SOCIAL MEDIA:
-https://www.tiktok.com/@deconstruction.zone
-https://www.twitch.tv/deconstructionzone_
-https://www.youtube.com/@Deconstruction_Zone
-https://www.youtube.com/@DZDebates
-https://www.instagram.com/deconstruction_zone/
-https://discord.com/invite/WmeAmrhkxZ
-https://linktr.ee/justin_____</description>
-      <itunes:summary>JOIN TO GET CHEATSHEET/PERKS
-https://www.youtube.com/@DZDebates/join
----------------------------------------------
-MAIN CHANNEL
-https://www.youtube.com/@Deconstruction_Zone
----------------------------------------------
-SUPPORT STREAM:
-https://venmo.com/u/JHCOFFEEFUND
-https://www.paypal.com/paypalme/JHCOFFEEFUND
-https://cash.app/$JHCOFFEEFUND
-https://www.patreon.com/Deconstruction_Zone
----------------------------------------------
-SOCIAL MEDIA:
-https://www.tiktok.com/@deconstruction.zone
-https://www.twitch.tv/deconstructionzone_
-https://www.youtube.com/@Deconstruction_Zone
-https://www.youtube.com/@DZDebates
-https://www.instagram.com/deconstruction_zone/
-https://discord.com/invite/WmeAmrhkxZ
-https://linktr.ee/justin_____</itunes:summary>
-      <pubDate>Mon, 28 Sep 2026 15:04:48 +0000</pubDate>
-      <guid isPermaLink="false">yt-CDb0AvCAxGU</guid>
-      <link>https://www.youtube.com/watch?v=CDb0AvCAxGU</link>
-      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/dz-debates/CDb0AvCAxGU.mp3" length="7387363" type="audio/mpeg"/>
-      <itunes:duration>00:21:44</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>

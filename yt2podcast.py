@@ -9,6 +9,7 @@ AGGIUNGERE UN CANALE, UNA PLAYLIST O UN VIDEO (basta incollare il link):
     python3 yt2podcast.py --add LINK
     python3 yt2podcast.py --preview LINK        (solo JSON: cosa entrerebbe)
     python3 yt2podcast.py --remove SLUG
+    python3 yt2podcast.py --remove-episode SLUG ID_VIDEO   (toglie un solo episodio)
     python3 yt2podcast.py --cover SLUG FILE_IMMAGINE
     python3 yt2podcast.py --only SLUG           (giro su un solo show)
     python3 yt2podcast.py --aggiorna-programma  (aggiorna yt-dlp, poi il giro)
@@ -1105,6 +1106,8 @@ def add_video(url, cfg):
         "duration": get_duration(full) or durata,
     })
     state["episodes"].sort(key=lambda e: e.get("published", ""), reverse=True)
+    if video_id in state.get("purged", []):
+        state["purged"] = sorted(set(state["purged"]) - {video_id})
     save_json(state_file, state)
     save_json(CONFIG_FILE, cfg)
 
@@ -1320,6 +1323,40 @@ def rimuovi(slug):
     log(f"Rimosso lo show {slug}.")
 
 
+def rimuovi_singolo(slug, ident):
+    """Toglie un solo episodio di uno show: file, stato, e non viene riscaricato."""
+    if not re.fullmatch(r"[a-z0-9-]+", slug or ""):
+        raise Errore(f"Nome dello show non valido: {slug!r}")
+    if not re.fullmatch(r"[A-Za-z0-9_-]{11}", ident or ""):
+        raise Errore(f"Identificativo del video non valido: {ident!r}")
+    cfg = load_json(CONFIG_FILE)
+    if not cfg:
+        raise Errore(f"ERRORE: manca {CONFIG_FILE}")
+    channel = next((c for c in cfg.get("channels", [])
+                    if c.get("slug") == slug), None)
+    if channel is None:
+        raise Errore(f"Show sconosciuto: {slug}")
+    state_file = os.path.join(STATE_DIR, f"{slug}.json")
+    state = _carica_stato(state_file)
+    ep = next((e for e in state["episodes"] if e.get("id") == ident), None)
+    if ep is None:
+        raise Errore(f"Episodio non trovato: {ident}")
+    rimuovi_episodio(os.path.join(AUDIO_ROOT, slug), ep)
+    state["episodes"] = [e for e in state["episodes"] if e.get("id") != ident]
+    state["purged"] = sorted(set(state.get("purged", [])) | {ident})
+    save_json(state_file, state)
+    # il giro senza elaborare non tocca i feed: questo va rifatto qui
+    build_feed(cfg, channel, state["episodes"])
+    log(f"Eliminato l'episodio: {ep.get('title', ident)}")
+
+
+def titolo_episodio(slug, ident):
+    """Titolo di un episodio dallo stato (per l'avanzamento), o l'id."""
+    stato = load_json(os.path.join(STATE_DIR, f"{slug}.json"), {}) or {}
+    return next((e.get("title") or ident for e in stato.get("episodes", [])
+                 if e.get("id") == ident), ident)
+
+
 def cambia_copertina(slug, file_immagine):
     cfg = load_json(CONFIG_FILE) or {}
     if not any(c.get("slug") == slug for c in cfg.get("channels", [])):
@@ -1394,7 +1431,9 @@ def process_playlist(cfg, channel):
         del falliti[ident]
 
     known = {e["id"] for e in state["episodes"]}
-    nuovi = [v for v in target if v["id"] not in known and v["id"] not in skipped]
+    purged = set(state.get("purged", []))   # eliminati a mano: non tornano
+    nuovi = [v for v in target if v["id"] not in known
+             and v["id"] not in skipped and v["id"] not in purged]
     # nessuna regola di durata o di titolo: la playlist l'hai scelta tu
     regole = dict(regole_mod.regole_effettive(cfg, channel),
                   min_s=0, max_s=0, solo=[], salta=[])
@@ -1426,6 +1465,8 @@ def process_playlist(cfg, channel):
 
     state["episodes"].sort(key=lambda e: e.get("published", ""), reverse=True)
     state["skipped"] = sorted(skipped)
+    if purged:
+        state["purged"] = sorted(purged)
     save_json(state_file, state)
 
     feed_url, count = build_feed(cfg, channel, state["episodes"])
@@ -1639,6 +1680,7 @@ def _aggiorna_programma():
 
 def _azione_da_riga():
     for opzione, azione in (("--add", "aggiungi"), ("--video", "video"),
+                            ("--remove-episode", "rimuovi-episodio"),
                             ("--remove", "rimuovi"), ("--cover", "copertina"),
                             ("--aggiorna-programma", "aggiorna-programma")):
         if opzione in sys.argv:
@@ -1696,6 +1738,12 @@ def _esegui(azione):
         rimuovi(slug)
         return _codice(giro(_carica_cfg(), elabora=False, azione=azione))
 
+    if "--remove-episode" in sys.argv:
+        slug, ident = _argomenti("--remove-episode", 2, "SLUG ID_VIDEO")
+        _avanza(testo=f"Elimino {titolo_episodio(slug, ident)[:80]}…", show=slug)
+        rimuovi_singolo(slug, ident)
+        return _codice(giro(_carica_cfg(), elabora=False, azione=azione))
+
     if "--cover" in sys.argv:
         slug, file_immagine = _argomenti("--cover", 2, "SLUG FILE")
         _avanza(testo="Preparo la copertina…", show=slug)
@@ -1718,8 +1766,36 @@ def _codice(riepilogo):
     return 2 if riepilogo["esito"] == "fallito" else 0
 
 
+# opzione -> quanti valori consuma (i valori possono iniziare con "-")
+OPZIONI = {"--add": 1, "--video": 1, "--remove": 1, "--remove-episode": 2,
+           "--cover": 2, "--only": 1, "--preview": 1, "--regole": 1,
+           "--aggiorna-programma": 0, "--senza-attesa": 0}
+
+
+def _opzione_sconosciuta(argv):
+    """Il primo token che sembra un'opzione ma non lo e', o None.
+    I valori delle opzioni note si saltano: un id video puo' iniziare con '-'."""
+    i = 0
+    while i < len(argv):
+        t = argv[i]
+        if t in OPZIONI:
+            i += 1 + OPZIONI[t]
+        elif t.startswith("-"):
+            return t
+        else:
+            i += 1
+    return None
+
+
 def _main():
     """Esegue la riga di comando. Restituisce il codice di uscita."""
+    sconosciuta = _opzione_sconosciuta(sys.argv[1:])
+    if sconosciuta in ("-h", "--help"):
+        print(__doc__.strip())
+        return 0
+    if sconosciuta:
+        log(f"Opzione sconosciuta: {sconosciuta}")
+        return 1
     try:
         if "--preview" in sys.argv:
             _anteprima_cli(*_argomenti("--preview", 1, "LINK"))

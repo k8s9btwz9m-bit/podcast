@@ -379,6 +379,46 @@ class TestLavori(Base):
         self.assertEqual(self.post("/api/rimuovi", {"slug": "a"})[0], 202)
         self.assertEqual(self.lanciati, [["--remove", "a"]])
 
+    def _con_episodio(self):
+        scrivi_json(self.d, "state/a.json", {"episodes": [
+            {"id": "abcdefghijk", "title": "T"}]})
+
+    def test_rimuovi_episodio(self):
+        self._con_episodio()
+        post = lambda c: self.post("/api/rimuovi-episodio", c)
+        self.assertEqual(post({"slug": "zzz", "id": "abcdefghijk"})[0], 404)
+        self.assertEqual(post({"slug": "../a", "id": "abcdefghijk"})[0], 404)
+        self.assertEqual(post({"slug": "a", "id": "corto"})[0], 400)
+        self.assertEqual(post({"slug": "a", "id": "-x;rm -rf /"})[0], 400)
+        self.assertEqual(post({"slug": "a"})[0], 400)
+        s, r = post({"slug": "a", "id": "ABCDEFGHIJK"})
+        self.assertEqual((s, r["errore"]), (404, "Episodio non trovato."))
+        self.assertEqual(self.lanciati, [])
+        self.assertEqual(post({"slug": "a", "id": "abcdefghijk"})[0], 202)
+        self.assertEqual(self.lanciati,
+                         [["--remove-episode", "a", "abcdefghijk"]])
+
+    def test_rimuovi_episodio_senza_stato(self):
+        s, _ = self.post("/api/rimuovi-episodio", {"slug": "a", "id": "abcdefghijk"})
+        self.assertEqual(s, 404)
+        self.assertEqual(self.lanciati, [])
+
+    def test_rimuovi_episodio_occupato_409(self):
+        self._con_episodio()
+        with Blocco(self.d):
+            s, r = self.post("/api/rimuovi-episodio",
+                             {"slug": "a", "id": "abcdefghijk"})
+        self.assertEqual((s, r["errore"]), (409, "C'è già un lavoro in corso."))
+        self.assertEqual(self.lanciati, [])
+
+    def test_rimuovi_episodio_ammissione(self):
+        self._con_episodio()
+        for modifica in ({"X-Podcast": "0"}, {"Origin": "https://evil.example"}):
+            s, _ = self.post("/api/rimuovi-episodio",
+                             {"slug": "a", "id": "abcdefghijk"}, modifica)
+            self.assertEqual(s, 403)
+        self.assertEqual(self.lanciati, [])
+
     def test_singolo(self):
         self.assertEqual(self.post("/api/singolo", {"id": "corto"})[0], 400)
         self.assertEqual(self.lanciati, [])

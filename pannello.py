@@ -728,6 +728,17 @@ class Gestore(BaseHTTPRequestHandler):
         self.server.esige_libero()
         self._avvia(["--remove", slug])
 
+    def _p_rimuovi_episodio(self, corpo):
+        radice = self.server.radice
+        slug = corpo.get("slug")
+        _canale(_cfg(radice), slug)
+        ident = _id_video(corpo)
+        if not any(isinstance(e, dict) and e.get("id") == ident
+                   for e in _stato_show(radice, slug).get("episodes", [])):
+            raise Errore(404, "Episodio non trovato.")
+        self.server.esige_libero()
+        self._avvia(["--remove-episode", slug, ident])
+
     def _p_singolo(self, corpo):
         ident = _id_video(corpo)
         self.server.esige_libero()
@@ -826,6 +837,7 @@ class Gestore(BaseHTTPRequestHandler):
 POST_API = {
     "/api/aggiorna": "_p_aggiorna", "/api/aggiungi": "_p_aggiungi",
     "/api/anteprima": "_p_anteprima", "/api/rimuovi": "_p_rimuovi",
+    "/api/rimuovi-episodio": "_p_rimuovi_episodio",
     "/api/singolo": "_p_singolo", "/api/riprova": "_p_riprova",
     "/api/aggiorna-programma": "_p_aggiorna_programma",
     "/api/apri-cartella": "_p_apri_cartella", "/api/copertina": None,

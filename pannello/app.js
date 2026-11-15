@@ -546,17 +546,16 @@
         const img = $("qr").querySelector("img");
         if (img) img.setAttribute("alt", "Codice QR di " + d.title);
       }
-      $("conferma-testo").textContent = "Rimuovere " + d.title + "? Audio e feed di questo show vengono cancellati.";
     }
 
-    if (cambiato("eps", [d.title, s.episodi, s.mb, d.episodi, d.saltati.length, versioneCopertine])) {
+    if (cambiato("eps", [d.title, s.episodi, s.mb, d.episodi, d.saltati.length, versioneCopertine, !!S.in_corso])) {
       testo($("scheda-titolo"), d.title);
       let somma = plurale(d.episodi.length, "episodio", "episodi") + " · " + s.mb + " MB";
       if (d.saltati.length) somma += " · " + plurale(d.saltati.length, "video saltato", "video saltati") + " finora";
       testo($("scheda-somma"), somma);
       const ol = $("episodi");
       if (d.episodi.length) {
-        ol.replaceChildren(...d.episodi.map((e) => episodio(d.slug, e)));
+        ol.replaceChildren(...d.episodi.map((e) => episodio(d.slug, e, !!S.in_corso)));
       } else {
         ol.replaceChildren(el("li", { class: "empty" }, "Nessun episodio ancora."));
       }
@@ -573,7 +572,7 @@
     aggiornaRegole(d);
   }
 
-  function episodio(slug, e) {
+  function episodio(slug, e, occupato) {
     // senza miniatura propria si mostra la copertina dello show
     const foto = e.image
       ? el("img", { src: "/miniature/" + encodeURIComponent(slug) + "/" + encodeURIComponent(e.id) + ".jpg",
@@ -585,8 +584,12 @@
     if (e.nuovo_oggi) meta.append(el("em", null, "nuovo oggi"));
     if (e.chapters > 0) meta.append(el("span", null, plurale(e.chapters, "capitolo", "capitoli")));
     if (e.tagliati_s > 0) meta.append(el("span", null, "tagliati " + durata(e.tagliati_s) + " di sponsor"));
+    const elimina = el("button", { class: "ep-del", type: "button", title: "Elimina",
+                                   "aria-label": "Elimina l'episodio " + e.title }, "×");
+    elimina.disabled = !!occupato;
+    elimina.addEventListener("click", () => chiediElimina(slug, e, elimina));
     return el("li", { class: "ep" }, img, el("span", { class: "t", title: e.title }, e.title),
-      el("span", { class: "dur" }, durata(e.duration)), meta);
+      el("span", { class: "dur" }, durata(e.duration)), elimina, meta);
   }
 
   // Titolo (o id) di un video saltato: collegamento a YouTube solo con un id valido.
@@ -674,23 +677,55 @@
     aggiornaStato();
   });
 
-  function mostraConferma(si) {
+  // La stessa conferma serve per lo show e per un episodio: `conferma` dice
+  // cosa chiede, cosa fare se si accetta e a chi restituire il cursore.
+  let conferma = null;
+
+  function mostraConferma(si, voce) {
     confermaAperta = si;
+    conferma = si ? voce : null;
     $("conferma").hidden = !si;
     $("azioni").hidden = si;
-    if (si) $("conferma-no").focus();
+    if (si) {
+      testo($("conferma-testo"), voce.testo);
+      testo($("conferma-si-testo"), voce.etichetta);
+      $("conferma-no").focus();
+    }
   }
 
-  $("rimuovi").addEventListener("click", () => mostraConferma(true));
-  $("conferma-no").addEventListener("click", () => { mostraConferma(false); $("rimuovi").focus(); });
+  function chiudiConferma() {
+    const da = conferma && conferma.apertoDa;
+    mostraConferma(false);
+    const b = da && da.isConnected && !da.disabled ? da : $("rimuovi");
+    if (!b.hidden) b.focus();
+  }
+
+  $("rimuovi").addEventListener("click", () => {
+    if (!dettaglio) return;
+    const slug = dettaglio.slug;
+    mostraConferma(true, {
+      testo: "Rimuovere " + dettaglio.title + "? Audio e feed di questo show vengono cancellati.",
+      etichetta: "Rimuovi", apertoDa: $("rimuovi"),
+      esegui: () => azione("/api/rimuovi", { slug: slug }, "Rimuovo lo show.") });
+  });
+
+  function chiediElimina(slug, e, bottone) {
+    mostraConferma(true, {
+      testo: "Eliminare «" + e.title + "»? L'audio viene cancellato e l'episodio non verrà più scaricato.",
+      etichetta: "Elimina", apertoDa: bottone,
+      esegui: () => azione("/api/rimuovi-episodio", { slug: slug, id: e.id }, "Elimino l'episodio.") });
+  }
+
+  $("conferma-no").addEventListener("click", chiudiConferma);
   $("conferma").addEventListener("keydown", (ev) => {
-    if (ev.key === "Escape") { mostraConferma(false); $("rimuovi").focus(); }
+    if (ev.key === "Escape") chiudiConferma();
   });
   $("conferma-si").addEventListener("click", async () => {
-    if (!dettaglio) return;
+    if (!dettaglio || !conferma) return;
     const b = $("conferma-si");
+    const voce = conferma;
     b.disabled = true;
-    const r = await azione("/api/rimuovi", { slug: dettaglio.slug }, "Rimuovo lo show.");
+    const r = await voce.esegui();
     b.disabled = false;
     if (r && r.ok) mostraConferma(false);
   });

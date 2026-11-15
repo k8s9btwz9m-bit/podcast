@@ -81,6 +81,49 @@ class TestAnteprima(Base):
         self.assertEqual(a["stima_mb"], 5)
         self.assertFalse(a["gia_presente"])
 
+    LINK_IN_LISTA = "https://www.youtube.com/watch?v=3n273Mogjrc&list=PLXWeh-u-zUZk"
+    META_IN_LISTA = {"id": "3n273Mogjrc", "title": "Un video", "duration": 600}
+
+    def test_anteprima_video_in_una_playlist(self):
+        finto_ytdlp_json(lambda args: {"title": "Podcast", "entries": [
+            {"id": "3n273Mogjrc"}, {"id": "BBBBBBBBBBB"}]})
+        with mock.patch.object(yt2podcast, "video_metadata",
+                               return_value=self.META_IN_LISTA):
+            a = yt2podcast.anteprima(self.LINK_IN_LISTA, self.cfg)
+        self.assertEqual(a["tipo"], "video")
+        self.assertEqual([v["id"] for v in a["video"]], ["3n273Mogjrc"])
+        self.assertEqual(a["playlist"], {
+            "link": "https://www.youtube.com/playlist?list=PLXWeh-u-zUZk",
+            "title": "Podcast", "video": 2})
+
+    def test_anteprima_playlist_lunga_conta_al_massimo(self):
+        finto_ytdlp_json(lambda args: {"title": "Enorme", "entries": [
+            {"id": f"V{i}"} for i in range(80)]})
+        with mock.patch.object(yt2podcast, "video_metadata",
+                               return_value=self.META_IN_LISTA):
+            a = yt2podcast.anteprima(self.LINK_IN_LISTA, self.cfg)
+        self.assertEqual(a["playlist"]["video"], yt2podcast.MAX_EPISODI_PLAYLIST)
+
+    def test_anteprima_video_playlist_illeggibile(self):
+        finto_ytdlp_json(yt2podcast.Errore("ERRORE: yt-dlp"))
+        with mock.patch.object(yt2podcast, "video_metadata",
+                               return_value=self.META_IN_LISTA):
+            a = yt2podcast.anteprima(self.LINK_IN_LISTA, self.cfg)
+        self.assertIsNone(a["playlist"])
+        self.assertEqual([v["id"] for v in a["video"]], ["3n273Mogjrc"])
+
+    def test_anteprima_mix_o_video_semplice_senza_playlist(self):
+        for link in ("https://www.youtube.com/watch?v=3n273Mogjrc&list=RDabc",
+                     "https://www.youtube.com/watch?v=3n273Mogjrc"):
+            with mock.patch.object(yt2podcast, "video_metadata",
+                                   return_value=self.META_IN_LISTA):
+                self.assertIsNone(yt2podcast.anteprima(link, self.cfg)["playlist"])
+
+    def test_anteprima_non_video_ha_playlist_none(self):
+        finto_elenco_playlist(["A"])
+        a = yt2podcast.anteprima("https://www.youtube.com/playlist?list=PLxyz", self.cfg)
+        self.assertIsNone(a["playlist"])
+
     def test_anteprima_link_sconosciuto(self):
         with self.assertRaises(yt2podcast.Errore):
             yt2podcast.anteprima("ciao", self.cfg)
@@ -162,6 +205,18 @@ class TestAggiungi(Base):
                              ["yMP3ZxUWOaQ"])
             with self.assertRaises(yt2podcast.Errore):
                 yt2podcast.aggiungi("https://youtu.be/yMP3ZxUWOaQ")
+
+    def test_video_in_una_playlist_aggiunge_solo_il_video(self):
+        meta = {"id": "3n273Mogjrc", "title": "Un video", "duration": 600}
+        finto_download_ok()
+        with mock.patch.object(yt2podcast, "video_metadata", return_value=meta):
+            slug = yt2podcast.aggiungi(
+                "https://www.youtube.com/watch?v=3n273Mogjrc&list=PLXWeh-u-zUZk")
+        self.assertEqual(slug, "youtube")
+        canali = leggi_cfg(self.d)["channels"]
+        self.assertFalse([c for c in canali if c.get("type") == "playlist"
+                          or c.get("playlist_id")])
+        self.assertNotIn("PLXWeh-u-zUZk", json.dumps(leggi_cfg(self.d)))
 
     def test_sconosciuto(self):
         with self.assertRaises(yt2podcast.Errore):

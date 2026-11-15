@@ -47,6 +47,17 @@
       "cover": "https://k8s9btwz9m-bit.github.io/podcast/cover-youtube.jpg",
       "manual": true,
       "max_episodes": 50
+    },
+    {
+      "id": "PLXWeh-u-zUZk",
+      "playlist_id": "PLXWeh-u-zUZk",
+      "type": "playlist",
+      "slug": "podcast",
+      "title": "Podcast",
+      "description": "Audio dei video della playlist YouTube Podcast.",
+      "category": "Science",
+      "cover": "https://k8s9btwz9m-bit.github.io/podcast/cover-podcast.jpg",
+      "max_episodes": 50
     }
   ],
   "min_duration_minutes": 2,

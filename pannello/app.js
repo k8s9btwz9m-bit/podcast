@@ -916,7 +916,8 @@
   }
 
   // ------------------------------------------------------------ link e anteprima
-  const pv = { n: 0, link: "", stato: "libero", dati: null, pausa: null, aggiungendo: false };
+  // coppia: un video aperto dentro una playlist, {video: link incollato, playlist: {link, title, video}, scelta: "video" | "playlist"}
+  const pv = { n: 0, link: "", stato: "libero", dati: null, pausa: null, aggiungendo: false, coppia: null };
 
   function nota(msg, errore) {
     const p = $("aggiunta-nota");
@@ -929,6 +930,7 @@
     pv.stato = "libero";
     pv.dati = null;
     pv.link = "";
+    pv.coppia = null;
     clearTimeout(pv.pausa);
     $("anteprima").hidden = true;
     $("pv-max").value = "";
@@ -937,16 +939,17 @@
     if (svuota) $("link").value = "";
   }
 
-  async function avviaAnteprima(mantieniRegola) {
-    const link = mantieniRegola ? pv.link : $("link").value.trim();
+  // linkScelto: cambio fra video e playlist della coppia, l'anteprima resta visibile
+  async function avviaAnteprima(mantieniRegola, linkScelto) {
+    const link = linkScelto || (mantieniRegola ? pv.link : $("link").value.trim());
     if (!link) { nota("Incolla prima il link di un canale, di una playlist o di un video.", true); return; }
-    if (!mantieniRegola) $("pv-max").value = "";
+    if (!mantieniRegola && !linkScelto) { $("pv-max").value = ""; pv.coppia = null; }
     const massimo = regolaAnteprima();
     if (massimo === false) { pv.n++; $("anteprima").removeAttribute("aria-busy"); return; }  // un'anteprima in volo non deve toccare l'avviso
     const mio = ++pv.n;
     pv.link = link;
     pv.stato = "carico";
-    if (!mantieniRegola) $("anteprima").hidden = true;
+    if (!mantieniRegola && !linkScelto) $("anteprima").hidden = true;
     $("anteprima").setAttribute("aria-busy", "true");
     nota("Guardo cosa c'è…", false);
     const corpo = { link: link };
@@ -963,6 +966,10 @@
     }
     pv.stato = "pronto";
     pv.dati = r.dati;
+    if (!linkScelto && !mantieniRegola) {
+      pv.coppia = r.dati.tipo === "video" && r.dati.playlist && r.dati.playlist.link
+        ? { video: link, playlist: r.dati.playlist, scelta: "video" } : null;
+    }
     nota(NOTA_PREDEFINITA, false);
     mostraAnteprima(r.dati);
   }
@@ -989,6 +996,14 @@
       : d.tipo === "playlist" ? "Playlist · " + plurale(video.length, "video", "video")
       : "Video singolo";
     testo($("pv-tipo"), tipo);
+    const c = pv.coppia;
+    $("pv-scelta").hidden = !c;
+    if (c) {
+      const inLista = c.scelta === "playlist";
+      testo($("pv-scelta-playlist"), "Tutta la playlist «" + c.playlist.title + "» · " + plurale(c.playlist.video, "video", "video"));
+      $("pv-scelta-video").setAttribute("aria-pressed", String(!inLista));
+      $("pv-scelta-playlist").setAttribute("aria-pressed", String(inLista));
+    }
     $("pv-regola").hidden = d.tipo !== "canale";
     $("pv-elenco").replaceChildren(...video.map((v) => {
       const marchio = v.entra
@@ -1012,7 +1027,8 @@
   $("aggiunta").addEventListener("submit", (ev) => { ev.preventDefault(); avviaAnteprima(false); });
   $("link").addEventListener("paste", () => setTimeout(() => avviaAnteprima(false), 0));
   $("link").addEventListener("input", () => {
-    if ($("link").value.trim() !== pv.link && pv.stato !== "libero") chiudiAnteprima(false);
+    const digitato = pv.coppia ? pv.coppia.video : pv.link;
+    if ($("link").value.trim() !== digitato && pv.stato !== "libero") chiudiAnteprima(false);
   });
   $("link").addEventListener("keydown", (ev) => {
     if (ev.key === "Escape" && pv.stato !== "libero") chiudiAnteprima(false);
@@ -1027,9 +1043,20 @@
     clearTimeout(pv.pausa);
     pv.pausa = setTimeout(() => { if (pv.link) avviaAnteprima(true); }, 600);
   });
+  function scegli(scelta) {
+    const c = pv.coppia;
+    if (!c || c.scelta === scelta || pv.aggiungendo) return;
+    c.scelta = scelta;
+    $("pv-scelta-video").setAttribute("aria-pressed", String(scelta === "video"));
+    $("pv-scelta-playlist").setAttribute("aria-pressed", String(scelta === "playlist"));
+    clearTimeout(pv.pausa);
+    avviaAnteprima(true, scelta === "playlist" ? c.playlist.link : c.video);
+  }
+  $("pv-scelta-video").addEventListener("click", () => scegli("video"));
+  $("pv-scelta-playlist").addEventListener("click", () => scegli("playlist"));
   $("pv-annulla").addEventListener("click", () => { chiudiAnteprima(true); $("link").focus(); });
   $("pv-aggiungi").addEventListener("click", async () => {
-    if (pv.aggiungendo || !pv.dati || pv.dati.gia_presente) return;
+    if (pv.aggiungendo || pv.stato !== "pronto" || !pv.dati || pv.dati.gia_presente) return;
     const massimo = regolaAnteprima();
     if (massimo === false) return;
     pv.aggiungendo = true;

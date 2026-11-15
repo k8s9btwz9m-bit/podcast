@@ -1179,10 +1179,33 @@ def _gia_presente(cfg, tipo, ident):
                for c in cfg.get("channels", []))
 
 
+def _playlist_del_video(lista):
+    """La playlist in cui si trova un video, per proporla: {"link", "title", "video"} o None.
+
+    Una sola lettura piatta; se la playlist e' privata o non si legge, None."""
+    try:
+        # basta il primo video: il totale lo dice playlist_count, e le
+        # playlist enormi non rallentano l'anteprima
+        d = ytdlp_json(["--flat-playlist", "--playlist-end", "1",
+                        playlist_url(lista)])
+    except Errore:
+        return None
+    voci = [e for e in (d.get("entries") or []) if e and e.get("id")]
+    n = int(d.get("playlist_count") or 0) or len(voci)
+    if not n:
+        return None
+    return {"link": playlist_url(lista),
+            "title": (d.get("title") or lista).strip(),
+            "video": min(n, MAX_EPISODI_PLAYLIST)}
+
+
 def anteprima(link, cfg, regole_extra=None):
     """Cosa succederebbe aggiungendo il link, senza scaricare ne' scrivere nulla."""
     c = _classifica(link)
+    playlist = None
     if c["tipo"] == "video":
+        if c.get("playlist"):
+            playlist = _playlist_del_video(c["playlist"])
         meta = video_metadata(c["url"])
         ident = meta.get("id") or c["id"]
         durata = int(meta.get("duration") or 0) or None
@@ -1210,7 +1233,8 @@ def anteprima(link, cfg, regole_extra=None):
     minuti = sum((v["duration"] or 0) for v in voci if v["entra"]) / 60
     return {"tipo": c["tipo"], "id": ident, "title": titolo,
             "gia_presente": _gia_presente(cfg, c["tipo"], ident),
-            "video": voci, "stima_mb": int(minuti * MB_AL_MINUTO + 0.5)}
+            "video": voci, "stima_mb": int(minuti * MB_AL_MINUTO + 0.5),
+            "playlist": playlist}
 
 
 def scarica_file(url, dest):

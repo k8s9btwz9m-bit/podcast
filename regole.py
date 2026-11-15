@@ -11,8 +11,21 @@ SENZA_SCHEMA = re.compile(
     r"^(?:(?:www\.|m\.)?youtube\.com|youtu\.be)(?:[/?#]|$)", re.IGNORECASE)
 
 
-def _risultato(tipo, ident, url):
-    return {"tipo": tipo, "id": ident, "url": url}
+def _risultato(tipo, ident, url, playlist=None):
+    return {"tipo": tipo, "id": ident, "url": url, "playlist": playlist}
+
+
+ID_LISTA = re.compile(r"^[A-Za-z0-9_-]+$")
+LISTE_AUTOMATICHE = ("WL", "LL", "LM")
+
+
+def _lista_seguibile(lista):
+    """L'id di una playlist vera e propria; None per mix (RD...) e liste automatiche."""
+    if not lista or not ID_LISTA.match(lista):
+        return None
+    if lista.startswith("RD") or lista in LISTE_AUTOMATICHE:
+        return None
+    return lista
 
 
 def classifica_link(testo):
@@ -27,14 +40,15 @@ def classifica_link(testo):
         host = (p.hostname or "").lower()
         segmenti = [s for s in p.path.split("/") if s]
         q = parse_qs(p.query)
+        seguibile = _lista_seguibile((q.get("list") or [""])[0])
         if host == "youtu.be":
             if segmenti and ID_VIDEO.match(segmenti[0]):
-                return _risultato("video", segmenti[0], url)
+                return _risultato("video", segmenti[0], url, seguibile)
         elif host == "youtube.com" or host.endswith(".youtube.com"):
             v = (q.get("v") or [""])[0]
             lista = (q.get("list") or [""])[0]
             if segmenti[:1] == ["watch"] and ID_VIDEO.match(v):
-                return _risultato("video", v, url)
+                return _risultato("video", v, url, seguibile)
             if segmenti[:1] in (["shorts"], ["live"], ["embed"]) and len(segmenti) > 1 \
                     and ID_VIDEO.match(segmenti[1]):
                 return _risultato("video", segmenti[1], url)

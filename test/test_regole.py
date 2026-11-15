@@ -44,6 +44,28 @@ class TestClassifica(unittest.TestCase):
         for testo in ("http://[", "   ", "https://", "https://esempio.it/pagina", "@@@", "\x00"):
             self.assertEqual(classifica_link(testo)["tipo"], "sconosciuto", testo)
 
+    def test_video_in_una_playlist(self):
+        r = classifica_link(
+            "https://www.youtube.com/watch?v=3n273Mogjrc&list=PLXWeh-u-zUZk")
+        self.assertEqual((r["tipo"], r["id"], r["playlist"]),
+                         ("video", "3n273Mogjrc", "PLXWeh-u-zUZk"))
+        r = classifica_link("https://youtu.be/3n273Mogjrc?list=PLXWeh-u-zUZk&si=x")
+        self.assertEqual((r["tipo"], r["id"], r["playlist"]),
+                         ("video", "3n273Mogjrc", "PLXWeh-u-zUZk"))
+
+    def test_liste_automatiche_non_si_seguono(self):
+        for lista in ("RDabc123", "RDMM", "WL", "LL", "LM", "a%20b"):
+            for base in ("https://www.youtube.com/watch?v=3n273Mogjrc&list=",
+                         "https://youtu.be/3n273Mogjrc?list="):
+                r = classifica_link(base + lista)
+                self.assertEqual((r["tipo"], r["playlist"]), ("video", None), base + lista)
+
+    def test_playlist_none_negli_altri_casi(self):
+        for link in ("https://www.youtube.com/watch?v=3n273Mogjrc",
+                     "https://www.youtube.com/playlist?list=PLabc",
+                     "UCoI9lb-zX8bzSndrEqm1y7g", "ciao"):
+            self.assertIsNone(classifica_link(link)["playlist"], link)
+
     def test_url_ripulito(self):
         r = classifica_link("  https://youtu.be/yMP3ZxUWOaQ?si=abc  ")
         self.assertEqual(r["url"], "https://youtu.be/yMP3ZxUWOaQ?si=abc")

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Podcast</title>
+<link rel="stylesheet" href="/stile.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-refresh" viewBox="0 0 18 18"><path d="M15 9a6 6 0 1 1-1.8-4.3"/><path d="M15 3v3.4h-3.4"/></symbol>
+  <symbol id="i-spin" viewBox="0 0 18 18"><path d="M9 3a6 6 0 1 1-6 6"/></symbol>
+  <symbol id="i-link" viewBox="0 0 18 18"><path d="M7.5 10.5a3.2 3.2 0 0 0 4.5 0l2.6-2.6a3.2 3.2 0 0 0-4.5-4.5l-.9.9"/><path d="M10.5 7.5a3.2 3.2 0 0 0-4.5 0L3.4 10.1a3.2 3.2 0 0 0 4.5 4.5l.9-.9"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 18 18"><path d="M9 3.5v11M3.5 9h11"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 18 18"><rect x="6.5" y="6.5" width="8.5" height="8.5" rx="1.8"/><path d="M11.5 6.5V4.3A1.3 1.3 0 0 0 10.2 3H4.3A1.3 1.3 0 0 0 3 4.3v5.9a1.3 1.3 0 0 0 1.3 1.3h2.2"/></symbol>
+  <symbol id="i-image" viewBox="0 0 18 18"><rect x="3" y="3" width="12" height="12" rx="2"/><path d="m3.5 12.5 3.2-3.2 2.8 2.8 1.9-1.9 3.1 3.1"/><path d="M11.4 6.6v.1"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 18 18"><path d="M3 5h12M6.8 5V3.6a.6.6 0 0 1 .6-.6h3.2a.6.6 0 0 1 .6.6V5M4.6 5l.6 9a1.2 1.2 0 0 0 1.2 1.1h5.2a1.2 1.2 0 0 0 1.2-1.1l.6-9"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 18 18"><path d="M9 2.5 1.8 15h14.4z"/><path d="M9 7.3v3.4M9 12.8v.1"/></symbol>
+  <symbol id="i-check" viewBox="0 0 18 18"><path d="m4 9.5 3.3 3.3L14 6"/></symbol>
+  <symbol id="i-skip" viewBox="0 0 18 18"><circle cx="9" cy="9" r="6"/><path d="M5 13 13 5"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 18 18"><path d="M2.5 5.2A1.2 1.2 0 0 1 3.7 4h3.2l1.6 1.8h5.8a1.2 1.2 0 0 1 1.2 1.2v5.8a1.2 1.2 0 0 1-1.2 1.2H3.7a1.2 1.2 0 0 1-1.2-1.2z"/></symbol>
+</svg>
+
+<div id="offline" class="offline" role="alert" hidden>Il pannello non risponde. Riaprilo dall'icona Podcast.</div>
+
+<div class="page">
+
+  <header class="top">
+    <h1>Podcast</h1>
+    <p class="status" id="stato"><i class="dot"></i><span><b id="stato-titolo">Carico lo stato…</b><span id="stato-riga"></span></span></p>
+    <button class="btn primary big" type="button" id="aggiorna"><svg class="i" id="aggiorna-icona"><use href="#i-refresh"/></svg><span id="aggiorna-testo">Aggiorna adesso</span></button>
+  </header>
+
+  <section class="notice bad" id="comando-fallito" hidden role="alert">
+    <h2><svg class="i"><use href="#i-warn"/></svg><span id="comando-testo"></span></h2>
+    <div class="row"><button class="btn" type="button" id="comando-chiudi">Chiudi</button></div>
+  </section>
+
+  <div class="dial" id="scala" role="img" aria-label="Giornata di oggi">
+    <div class="scale"></div>
+    <span class="hr" style="left:0">00</span>
+    <span class="hr sched" style="left:33.333%">08</span>
+    <span class="hr mid" style="left:50%">12</span>
+    <span class="hr sched" style="left:83.333%">20</span>
+    <span class="hr end" style="left:100%">24</span>
+    <i class="run" id="scala-ultimo" hidden></i>
+    <i class="run next" id="scala-prossimo" hidden></i>
+    <i class="now" id="scala-adesso"></i>
+  </div>
+
+  <section class="notice" id="avanzamento" hidden>
+    <div class="phead"><h2 id="avanzamento-testo"></h2><span id="avanzamento-show"></span></div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Avanzamento" id="avanzamento-barra"><i></i></div>
+  </section>
+
+  <section class="notice bad" id="errore-giro" hidden role="alert">
+    <h2><svg class="i"><use href="#i-warn"/></svg><span id="errore-titolo"></span></h2>
+    <div id="errore-testi"></div>
+    <div class="row"><button class="btn primary" type="button" id="errore-programma" hidden>Aggiorna il programma e riprova</button></div>
+  </section>
+
+  <form class="add" id="aggiunta" novalidate>
+    <div class="field">
+      <svg class="i"><use href="#i-link"/></svg>
+      <input id="link" type="text" inputmode="url" aria-label="Link di YouTube da aggiungere" placeholder="Incolla un link di YouTube: canale, playlist o video" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <button class="btn primary" type="submit"><svg class="i"><use href="#i-plus"/></svg><span>Aggiungi</span></button>
+    </div>
+    <p class="hint" id="aggiunta-nota" aria-live="polite">Lo riconosco da solo e ti mostro cosa entrerebbe, prima di aggiungere.</p>
+
+    <section class="pv" id="anteprima" hidden aria-label="Anteprima del link incollato">
+      <div class="pv-head">
+        <span class="pv-icon" aria-hidden="true"><svg class="i"><use href="#i-link"/></svg></span>
+        <div>
+          <h2 id="pv-titolo"></h2>
+          <p id="pv-tipo"></p>
+        </div>
+        <label class="rule" id="pv-regola" hidden>Durata massima per questo show <span class="unit"><input type="number" min="0" inputmode="numeric" id="pv-max" placeholder="generale"> min</span></label>
+      </div>
+      <ol id="pv-elenco"></ol>
+      <div class="pv-foot">
+        <span id="pv-riga"></span>
+        <div><button class="btn" type="button" id="pv-annulla">Annulla</button><button class="btn primary" type="button" id="pv-aggiungi">Aggiungi lo show</button></div>
+      </div>
+    </section>
+  </form>
+
+  <div class="shelf-head"><h2 class="label">I tuoi show</h2><span id="scaffale-somma"></span></div>
+  <ul class="shelf" id="scaffale"></ul>
+
+  <section class="sheet" id="scheda" hidden>
+    <div class="side">
+      <div class="qr" id="qr"></div>
+      <div>
+        <p>Inquadralo con l'iPhone per seguire lo show nell'app Podcast.</p>
+        <div id="azioni">
+          <button class="btn" type="button" id="copia"><svg class="i"><use href="#i-copy"/></svg>Copia il feed</button>
+          <button class="btn quiet" type="button" id="copertina"><svg class="i"><use href="#i-image"/></svg>Cambia copertina</button>
+          <button class="btn quiet danger" type="button" id="rimuovi"><svg class="i"><use href="#i-trash"/></svg>Rimuovi lo show</button>
+        </div>
+        <div class="confirm" id="conferma" role="group" aria-labelledby="conferma-testo" hidden>
+          <p id="conferma-testo"></p>
+          <div class="row"><button class="btn danger-solid" type="button" id="conferma-si">Rimuovi</button><button class="btn" type="button" id="conferma-no">Annulla</button></div>
+        </div>
+        <input type="file" id="copertina-file" accept="image/jpeg,image/png,image/webp,image/heic" hidden>
+      </div>
+    </div>
+
+    <div class="eps">
+      <h2 id="scheda-titolo"></h2>
+      <p class="sum" id="scheda-somma"></p>
+      <ol id="episodi"></ol>
+      <details class="all-skipped" id="saltati-show" hidden>
+        <summary id="saltati-show-titolo"></summary>
+        <ul class="skipped" id="saltati-show-elenco"></ul>
+      </details>
+    </div>
+
+    <div class="rules">
+      <h3 class="label">Regole di questo show</h3>
+      <form class="set" id="regole" novalidate>
+        <div><label for="r-min">Durata minima</label><span class="unit"><input id="r-min" type="number" min="0" inputmode="numeric"> min</span></div>
+        <div><label for="r-max">Durata massima</label><span class="unit"><input id="r-max" type="number" min="0" inputmode="numeric"> min</span></div>
+        <div class="col"><label for="r-in">Solo titoli che contengono</label><input id="r-in" type="text" placeholder="es. data over dogma" autocomplete="off"></div>
+        <div class="col"><label for="r-out">Salta titoli che contengono</label><input id="r-out" type="text" placeholder="es. giveaway, live" autocomplete="off"></div>
+        <div><span class="lab" id="r-sp-l">Taglia sponsor e sigle</span><button class="sw" type="button" role="switch" aria-checked="true" aria-labelledby="r-sp-l" id="r-sp"></button></div>
+        <div class="save"><button class="btn primary small" type="submit" id="r-salva" disabled>Salva le regole</button><span class="saved" id="r-esito" aria-live="polite"></span></div>
+      </form>
+      <p class="note">Dove non scrivi nulla valgono le impostazioni generali.</p>
+    </div>
+  </section>
+
+  <div class="low">
+    <section class="box" aria-labelledby="t-spazio">
+      <h3 class="label" id="t-spazio">Spazio</h3>
+      <div class="meter">
+        <div class="phead"><b>Cronologia</b><span id="sp-cron"></span></div>
+        <div class="bar" role="img" id="sp-cron-barra"><i></i></div>
+        <p id="sp-cron-nota"></p>
+      </div>
+      <div class="meter">
+        <div class="phead"><b>Sito pubblicato</b><span id="sp-sito"></span></div>
+        <div class="stack" role="img" id="sp-sito-barra"></div>
+        <ul class="legend" id="sp-legenda"></ul>
+      </div>
+    </section>
+
+    <section class="box" aria-labelledby="t-imp">
+      <h3 class="label" id="t-imp">Impostazioni generali</h3>
+      <form class="set" id="impostazioni" novalidate>
+        <div><label for="s-ep">Episodi tenuti per show</label><input id="s-ep" type="number" min="1" max="50" inputmode="numeric"></div>
+        <div><label for="s-min">Durata minima (min)</label><input id="s-min" type="number" min="0" inputmode="numeric"></div>
+        <div><label for="s-max">Durata massima (min)</label><input id="s-max" type="number" min="0" inputmode="numeric"></div>
+        <div><label for="s-q">Qualità audio</label><select id="s-q"><option value="leggera">Leggera (parlato)</option><option value="media">Media</option><option value="alta">Alta (musica)</option></select></div>
+        <div><span class="lab" id="g-sp-l">Taglia sponsor e sigle</span><button class="sw" type="button" role="switch" aria-checked="true" aria-labelledby="g-sp-l" id="g-sp"></button></div>
+        <div><span class="lab" id="g-vol-l">Volume uniforme</span><button class="sw" type="button" role="switch" aria-checked="true" aria-labelledby="g-vol-l" id="g-vol"></button></div>
+        <div><span class="lab" id="g-cap-l">Capitoli e immagine per episodio</span><button class="sw" type="button" role="switch" aria-checked="true" aria-labelledby="g-cap-l" id="g-cap"></button></div>
+        <div class="save"><button class="btn primary small" type="submit" id="s-salva" disabled>Salva le impostazioni</button><span class="saved" id="s-esito" aria-live="polite"></span></div>
+      </form>
+      <p class="note">Le modifiche valgono dal prossimo giro, per i download nuovi.</p>
+    </section>
+
+    <section class="box" aria-labelledby="t-salt">
+      <h3 class="label" id="t-salt"><span>Saltati nell'ultimo giro</span> <span id="salt-n"></span></h3>
+      <ul class="skipped" id="salt-elenco"></ul>
+      <p class="more" id="salt-altri" hidden></p>
+    </section>
+  </div>
+
+  <footer>
+    <span>Giro automatico ogni giorno alle 8:00 e alle 20:00.</span>
+    <button class="linkbtn" type="button" id="apri-cartella"><svg class="i"><use href="#i-folder"/></svg>Apri la cartella nel Finder</button>
+  </footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="sr" id="annunci" aria-live="polite" aria-atomic="true"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+progetto/
+run/
+.in-corso*
+__pycache__/
+.DS_Store
+log-automatico.txt
+log-shortcut.txt
+*.tmp

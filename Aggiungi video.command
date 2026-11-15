@@ -29,12 +29,14 @@ echo "  Aggiungo un video al podcast YouTube"
 echo "=============================================="
 echo
 
-python3 yt2podcast.py --video "$URL" && python3 yt2podcast.py
+python3 yt2podcast.py --video "$URL"
 ESITO=$?
 
 echo
 if [ $ESITO -eq 0 ]; then
     echo "OK - tra un paio di minuti lo trovi nell'app Podcast."
+elif [ $ESITO -eq 3 ]; then
+    echo "Un aggiornamento e' gia' in corso. Riprova tra poco."
 else
     echo "ERRORE (codice $ESITO)."
 fi

@@ -18,7 +18,7 @@ cd "$CARTELLA" || { avvisa "Cartella podcast non trovata."; exit 1; }
 
 {
     echo "===== $(date '+%Y-%m-%d %H:%M') - $URL"
-    python3 yt2podcast.py --video "$URL" && python3 yt2podcast.py
+    python3 yt2podcast.py --video "$URL"
 } >> "$LOG" 2>&1
 ESITO=$?
 

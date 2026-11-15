@@ -1,0 +1,19 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=ny2fhvJGjiU
+[youtube] ny2fhvJGjiU: Downloading webpage
+[youtube] ny2fhvJGjiU: Downloading visionos player API JSON
+[youtube] ny2fhvJGjiU: Downloading m3u8 information
+[SponsorBlock] Fetching SponsorBlock segments
+[SponsorBlock] No matching segments were found in the SponsorBlock database
+[info] ny2fhvJGjiU: Downloading 1 format(s): 251-20
+[info] Downloading video thumbnail 41 ...
+[info] Writing video thumbnail 41 to: /var/folders/q2/p1yjl2gd7nd5_xydnff51jth0000gp/T/tmp5g1mle71/a/ny2fhvJGjiU.webp
+[ThumbnailsConvertor] Converting thumbnail "/var/folders/q2/p1yjl2gd7nd5_xydnff51jth0000gp/T/tmp5g1mle71/a/ny2fhvJGjiU.webp" to jpg
+Deleting original file /var/folders/q2/p1yjl2gd7nd5_xydnff51jth0000gp/T/tmp5g1mle71/a/ny2fhvJGjiU.webp (pass -k to keep)
+[download] Destination: /var/folders/q2/p1yjl2gd7nd5_xydnff51jth0000gp/T/tmp5g1mle71/a/ny2fhvJGjiU.webm
+[download] Download completed
+[ExtractAudio] Destination: /var/folders/q2/p1yjl2gd7nd5_xydnff51jth0000gp/T/tmp5g1mle71/a/ny2fhvJGjiU.mp3
+Deleting original file /var/folders/q2/p1yjl2gd7nd5_xydnff51jth0000gp/T/tmp5g1mle71/a/ny2fhvJGjiU.webm (pass -k to keep)
+[ModifyChapters] SponsorBlock information is unavailable
+[Metadata] Adding metadata to "/var/folders/q2/p1yjl2gd7nd5_xydnff51jth0000gp/T/tmp5g1mle71/a/ny2fhvJGjiU.mp3"
+[EmbedThumbnail] ffmpeg: Adding thumbnail to "/var/folders/q2/p1yjl2gd7nd5_xydnff51jth0000gp/T/tmp5g1mle71/a/ny2fhvJGjiU.mp3"
+766

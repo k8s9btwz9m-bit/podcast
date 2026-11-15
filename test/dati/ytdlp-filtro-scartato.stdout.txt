@@ -1,0 +1,5 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=sPQMrf_mdUk
+[youtube] sPQMrf_mdUk: Downloading webpage
+[youtube] sPQMrf_mdUk: Downloading visionos player API JSON
+[youtube] sPQMrf_mdUk: Downloading m3u8 information
+[download] The first rule of Nicea Club #maklelan3552 does not pass filter (!is_live & duration > 120 & duration < 7200), skipping ..

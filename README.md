@@ -6,7 +6,7 @@ Sito: https://k8s9btwz9m-bit.github.io/podcast/
 
 ## Il pannello
 
-L'uso normale passa dal pannello: apri l'icona **Podcast** (in `~/Applications`,
+L'uso normale passa dal pannello: apri l'icona **Nazgûl** (in `~/Applications`,
 trascinala nel Dock) oppure vai su http://127.0.0.1:8719/.
 
 Dal pannello puoi:
@@ -22,22 +22,22 @@ Dal pannello puoi:
   saltato;
 - inquadrare il QR di uno show con l'iPhone per seguirlo nell'app Podcast.
 
-Il pannello parte da solo all'accesso (`local.podcast.pannello`) e risponde
+Il pannello parte da solo all'accesso (`local.nazgul.pannello`) e risponde
 solo dal Mac stesso. Se un giro fallisce arriva una notifica; arriva anche se
 nessun giro riesce da più di 36 ore.
 
 Il giro automatico parte ogni giorno alle 8:00 e alle 20:00
-(`local.podcast.aggiorna`).
+(`local.nazgul.aggiorna`).
 
 ## Questa cartella deve restare fuori da iCloud
 
-Il progetto sta in `~/Podcast`. Non spostarlo dentro `Documenti` o `Scrivania`:
+Il progetto sta in `~/Claude/App/Nazgul/Rilasci/attuale`. Non spostarlo dentro `Documenti` o `Scrivania`:
 iCloud toglie i file dal disco e gli aggiornamenti automatici smettono di
 funzionare. In `Documenti/App` c'è solo un collegamento.
 
 ## Da Terminale
 
-Tutto quello che fa il pannello si può fare anche a mano, da `~/Podcast`:
+Tutto quello che fa il pannello si può fare anche a mano, da `~/Claude/App/Nazgul/Rilasci/attuale`:
 
     python3 yt2podcast.py                      # giro completo e pubblicazione
     python3 yt2podcast.py --only SLUG          # solo uno show
@@ -97,6 +97,6 @@ blocco.
   `run/lavori.log` e `log-automatico.txt`.
 - YouTube rifiuta i download: dal pannello "Aggiorna il programma e riprova",
   oppure `uv tool upgrade yt-dlp`.
-- Il pannello non si apre: `launchctl kickstart -k gui/$(id -u)/local.podcast.pannello`.
+- Il pannello non si apre: `launchctl kickstart -k gui/$(id -u)/local.nazgul.pannello`.
 - Copertina vecchia nell'app Podcast: togli e riaggiungi lo show, l'app tiene
   in cache l'immagine.

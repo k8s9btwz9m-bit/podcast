@@ -142,7 +142,7 @@ def controlla_sorveglianza(radice, avvio, adesso=None):
     registro = _leggi_json(percorso, {})
     ultima = _data(registro.get("ultima_notifica")) if isinstance(registro, dict) else None
     if da_notificare(adesso, avvio, _ultimo_riuscito(radice), ultima):
-        notifica("Podcast", "Nessun aggiornamento riuscito da più di 36 ore. "
+        notifica("Nazgûl", "Nessun aggiornamento riuscito da più di 36 ore. "
                             "Apri il pannello.")
         _scrivi_json(percorso, {"ultima_notifica": adesso.isoformat()})
         return True

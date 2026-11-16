@@ -82,6 +82,7 @@
     "Yf84IzyvRpo",
     "_de428uBrFY",
     "aWyJbeejbUY",
+    "diTuQQSgD7o",
     "fM2_VKlnel0",
     "i0oQCXor7cs",
     "ja6Us-RfTYY",
@@ -232,6 +233,13 @@
     "zjhg_6cza1g",
     "zxBXhHcmRww"
   ],
-  "skipped_info": {},
+  "skipped_info": {
+    "diTuQQSgD7o": {
+      "title": "Maklelan Livestream",
+      "reason": "fuori dai limiti di durata",
+      "kind": "regola",
+      "date": "2026-11-16T19:01:26.646726+00:00"
+    }
+  },
   "falliti": {}
 }

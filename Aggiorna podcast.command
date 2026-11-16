@@ -1,6 +1,6 @@
 #!/bin/bash
 export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-CARTELLA="$HOME/Podcast"
+CARTELLA="$(cd "$(dirname "$0")" && pwd)"
 
 cd "$CARTELLA" || {
     echo "Non trovo la cartella $CARTELLA"

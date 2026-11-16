@@ -1,6 +1,6 @@
 #!/bin/bash
 export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-CARTELLA="$HOME/Podcast"
+CARTELLA="$(cd "$(dirname "$0")" && pwd)"
 
 APPUNTI=$(pbpaste 2>/dev/null)
 case "$APPUNTI" in

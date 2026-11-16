@@ -4,7 +4,7 @@ CARTELLA="$(cd "$(dirname "$0")" && pwd)"
 LOG="$CARTELLA/log-shortcut.txt"
 
 avvisa() {
-    osascript -e "on run {m}" -e "display notification m with title \"Podcast\"" \
+    osascript -e "on run {m}" -e "display notification m with title \"Nazgûl\"" \
               -e "end run" "$1" 2>/dev/null
 }
 
@@ -14,7 +14,7 @@ if [ -z "$URL" ]; then
     exit 1
 fi
 
-cd "$CARTELLA" || { avvisa "Cartella podcast non trovata."; exit 1; }
+cd "$CARTELLA" || { avvisa "Cartella di Nazgûl non trovata."; exit 1; }
 
 {
     echo "===== $(date '+%Y-%m-%d %H:%M') - $URL"

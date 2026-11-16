@@ -507,7 +507,7 @@ class TestCli(Base):
             bl.return_value.__enter__.side_effect = stato_giro.Occupato("x")
             codice, _ = self._main("--senza-attesa")
         self.assertEqual(codice, 3)
-        self.assertEqual(n, [("Podcast", "C'è già un aggiornamento in corso: riprova tra poco.")])
+        self.assertEqual(n, [("Nazgûl", "C'è già un aggiornamento in corso: riprova tra poco.")])
         self.assertEqual(bl.call_args.kwargs["attesa_s"], 0)
 
     def test_attesa_predefinita_30_minuti(self):

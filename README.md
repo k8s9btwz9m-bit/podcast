@@ -6,7 +6,7 @@ Sito: https://k8s9btwz9m-bit.github.io/podcast/
 
 ## Il pannello
 
-L'uso normale passa dal pannello: apri l'icona **Nazgûl** (in `~/Applications`,
+L'uso normale passa dal pannello: apri l'icona **Nazg** (in `~/Applications`,
 trascinala nel Dock) oppure vai su http://127.0.0.1:8719/.
 
 Dal pannello puoi:

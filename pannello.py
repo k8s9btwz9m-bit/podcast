@@ -37,7 +37,8 @@ TIPI_IMMAGINE = {"image/jpeg": "jpg", "image/png": "png",
                  "image/webp": "webp", "image/heic": "heic"}
 TIPI_STATICI = {"/": ("index.html", "text/html; charset=utf-8"),
                 "/app.js": ("app.js", "text/javascript; charset=utf-8"),
-                "/stile.css": ("stile.css", "text/css; charset=utf-8")}
+                "/stile.css": ("stile.css", "text/css; charset=utf-8"),
+                "/icona.png": ("icona.png", "image/png")}
 GRAZIA_LANCIO_S = 3
 GRAZIA_AVVIO = timedelta(minutes=30)
 SOGLIA_FERMO = timedelta(hours=36)
@@ -142,7 +143,7 @@ def controlla_sorveglianza(radice, avvio, adesso=None):
     registro = _leggi_json(percorso, {})
     ultima = _data(registro.get("ultima_notifica")) if isinstance(registro, dict) else None
     if da_notificare(adesso, avvio, _ultimo_riuscito(radice), ultima):
-        notifica("Nazgûl", "Nessun aggiornamento riuscito da più di 36 ore. "
+        notifica("Nazg", "Nessun aggiornamento riuscito da più di 36 ore. "
                             "Apri il pannello.")
         _scrivi_json(percorso, {"ultima_notifica": adesso.isoformat()})
         return True

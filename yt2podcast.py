@@ -1623,7 +1623,7 @@ def giro(cfg, solo=None, azione="aggiorna", elabora=True, errori_extra=None):
 
     if esito == "fallito":
         stato_giro.notifica(
-            "Nazgûl", "L'aggiornamento non è riuscito. Apri il pannello per i dettagli.")
+            "Nazg", "L'aggiornamento non è riuscito. Apri il pannello per i dettagli.")
     log("\nFatto.")
     for s in show:
         log(f"  {s['title']}: {s['feed_url']}")
@@ -1841,7 +1841,7 @@ def _main():
         except stato_giro.Occupato:
             log("C'è già un aggiornamento in corso: riprova tra poco.")
             stato_giro.notifica(
-                "Nazgûl", "C'è già un aggiornamento in corso: riprova tra poco.")
+                "Nazg", "C'è già un aggiornamento in corso: riprova tra poco.")
             return CODICE_BLOCCO_OCCUPATO
     except Errore as e:
         log(str(e))

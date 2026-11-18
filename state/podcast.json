@@ -1,6 +1,17 @@
 {
   "episodes": [
     {
+      "id": "I-CDJNu9tTY",
+      "title": "Rings of Power Season 3 Just Made Some BIG Mistakes (ft. Lindsay Ellis) | S3E3&4 Review",
+      "published": "2026-11-18T19:01:51.382371+00:00",
+      "description": "",
+      "file": "I-CDJNu9tTY.mp3",
+      "image": "I-CDJNu9tTY.jpg",
+      "chapters": 0,
+      "tagliati_s": 1,
+      "duration": 6875
+    },
+    {
       "id": "UgsW9vbERhY",
       "title": "The Rings of Power 3 is a masterpiece",
       "published": "2026-11-15T22:09:20.906909+00:00",
@@ -25,6 +36,6 @@
   ],
   "skipped_info": {},
   "falliti": {},
-  "ultimo_elenco": 2,
+  "ultimo_elenco": 3,
   "skipped": []
 }

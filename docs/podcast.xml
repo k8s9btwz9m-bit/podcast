@@ -7,7 +7,7 @@
     <description>Audio dei video della playlist YouTube Podcast.</description>
     <link>https://www.youtube.com/playlist?list=PLXWeh-u-zUZk</link>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 07:02:07 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 19:11:44 +0000</lastBuildDate>
     <atom:link href="https://k8s9btwz9m-bit.github.io/podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://k8s9btwz9m-bit.github.io/podcast/cover-podcast.jpg</url>
@@ -20,6 +20,19 @@
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Rings of Power Season 3 Just Made Some BIG Mistakes (ft. Lindsay Ellis) | S3E3&amp;4 Review</title>
+      <description></description>
+      <itunes:summary></itunes:summary>
+      <pubDate>Wed, 18 Nov 2026 19:01:51 +0000</pubDate>
+      <guid isPermaLink="false">yt-I-CDJNu9tTY</guid>
+      <link>https://www.youtube.com/watch?v=I-CDJNu9tTY</link>
+      <enclosure url="https://k8s9btwz9m-bit.github.io/podcast/audio/podcast/I-CDJNu9tTY.mp3" length="35716933" type="audio/mpeg"/>
+      <itunes:duration>01:54:35</itunes:duration>
+      <itunes:image href="https://k8s9btwz9m-bit.github.io/podcast/audio/podcast/I-CDJNu9tTY.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>The Rings of Power 3 is a masterpiece</title>
       <description></description>

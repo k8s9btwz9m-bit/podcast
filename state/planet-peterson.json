@@ -1,6 +1,17 @@
 {
   "episodes": [
     {
+      "id": "Zpd66yGxLVI",
+      "title": "Guest Brings a Spork to a Knife Fight",
+      "published": "2026-11-20T19:15:06+00:00",
+      "description": "My websites\nhttps://www.planetpetersonscience.com/\nhttps://www.ericpetersonbooks.com/\n-------------------------------------------------------------------\nPATREON (comes with ad-free videos and free stuff)\nhttps://patreon.com/planetpeterson\n-------------------------------------------------------------------\nBOOKS, MERCH, AND MORE\nhttps://planetpeterson.myshopify.com/\nhttps://www.ericpetersonbooks.com/\nhttps://www.paypal.com/paypalme/planetpeterson\nhttps://account.venmo.com/u/Eric-Peterson-532\n -------------------------------------------------------------------\nSOCIAL MEDIA\nhttps://discord.gg/qyA6CVGFNz\nhttps://www.instagram.com/planetpeterson/\nhttps://www.tiktok.com/@planet_peterson\nhttps://x.com/PetersonPlanet\n -------------------------------------------------------------------\nWant to send me something? \nPO Box 212 Visalia CA, 93279 (if using FedEx or UPS send to 111 W Acequia Ave, 212 Visalia CA, 93291)\nIMPORTANT: If you send me something, please email me at planetpetersonscience@gmail.com (I don't check my PO Box often)",
+      "file": "Zpd66yGxLVI.mp3",
+      "image": "Zpd66yGxLVI.jpg",
+      "chapters": 1,
+      "tagliati_s": 0,
+      "duration": 688
+    },
+    {
       "id": "Mh4k0zJu-z8",
       "title": "Guest Claims Science is a Logical Fallacy",
       "published": "2026-11-20T19:00:02+00:00",
@@ -65,17 +76,6 @@
       "chapters": 1,
       "tagliati_s": 0,
       "duration": 714
-    },
-    {
-      "id": "lvdG9xveZsE",
-      "title": "Saying Words to Sound More Photosynthesis",
-      "published": "2026-11-17T19:00:10+00:00",
-      "description": "My websites\nhttps://www.planetpetersonscience.com/\nhttps://www.ericpetersonbooks.com/\n-------------------------------------------------------------------\nPATREON (comes with ad-free videos and free stuff)\nhttps://patreon.com/planetpeterson\n-------------------------------------------------------------------\nBOOKS, MERCH, AND MORE\nhttps://planetpeterson.myshopify.com/\nhttps://www.ericpetersonbooks.com/\nhttps://www.paypal.com/paypalme/planetpeterson\nhttps://account.venmo.com/u/Eric-Peterson-532\n -------------------------------------------------------------------\nSOCIAL MEDIA\nhttps://discord.gg/qyA6CVGFNz\nhttps://www.instagram.com/planetpeterson/\nhttps://www.tiktok.com/@planet_peterson\nhttps://x.com/PetersonPlanet\n -------------------------------------------------------------------\nWant to send me something? \nPO Box 212 Visalia CA, 93279 (if using FedEx or UPS send to 111 W Acequia Ave, 212 Visalia CA, 93291)\nIMPORTANT: If you send me something, please email me at planetpetersonscience@gmail.com (I don't check my PO Box often)",
-      "file": "lvdG9xveZsE.mp3",
-      "image": "lvdG9xveZsE.jpg",
-      "chapters": 1,
-      "tagliati_s": 0,
-      "duration": 722
     }
   ],
   "skipped": [
@@ -181,6 +181,7 @@
     "k03BQLxjVwo",
     "kc6KRy-QDE8",
     "ljfP4GJIfjU",
+    "lvdG9xveZsE",
     "m1dtwPLqGLM",
     "mKPcjc3hq9I",
     "mhC_srHBCDc",

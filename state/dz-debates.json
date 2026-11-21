@@ -71,6 +71,7 @@
     "UcB5nwZP9zY",
     "Zj2ZsMT2S9A",
     "a0WK_DXrS9E",
+    "aGvztHKZCXY",
     "bJg4pGaNzto",
     "bdtVDlqonbg",
     "g4aeTAKrB30",
@@ -145,6 +146,13 @@
     "wan0LZLEax4",
     "xK_V0Ubc7jY"
   ],
-  "skipped_info": {},
+  "skipped_info": {
+    "aGvztHKZCXY": {
+      "title": "LIVE DEBATE [God is Imaginary, etc..] 11-20-2026 [H]",
+      "reason": "fuori dai limiti di durata",
+      "kind": "regola",
+      "date": "2026-11-21T07:01:27.142230+00:00"
+    }
+  },
   "falliti": {}
 }

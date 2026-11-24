@@ -78,6 +78,7 @@
   "skipped": [
     "3ZezwQhpuAM",
     "45JDJEIw6f4",
+    "47o36MXPfew",
     "4xYaE557huI",
     "6MANUMx6GRQ",
     "Gpnuc8DzZvE",
@@ -236,6 +237,12 @@
       "reason": "fuori dai limiti di durata",
       "kind": "regola",
       "date": "2026-11-23T17:01:59.911387+00:00"
+    },
+    "47o36MXPfew": {
+      "title": "YOU vs. PHYSICS - Ask a Physicist with Dr. Blitz [11/24/2026] [H]",
+      "reason": "fuori dai limiti di durata",
+      "kind": "regola",
+      "date": "2026-11-24T19:00:12.403343+00:00"
     }
   },
   "falliti": {}

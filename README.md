@@ -27,7 +27,9 @@ solo dal Mac stesso. Se un giro fallisce arriva una notifica; arriva anche se
 nessun giro riesce da più di 36 ore.
 
 Il giro automatico parte ogni giorno alle 8:00 e alle 20:00
-(`local.nazgul.aggiorna`).
+(`local.nazgul.aggiorna`), e anche all'accensione o al login, per recuperare un
+giro saltato a Mac spento. Se l'ultimo giro automatico è partito da meno di 2 ore,
+quell'avvio si salta (`state/ultimo-avvio-auto`).
 
 ## Questa cartella deve restare fuori da iCloud
 

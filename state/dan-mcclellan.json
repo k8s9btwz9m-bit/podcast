@@ -88,6 +88,7 @@
     "FCIEhftnNig",
     "GCzTFxsUeBQ",
     "JBp_rQYUEtQ",
+    "L7ri6JsakeA",
     "NNM9RFlWC5s",
     "OTggBgBkEWM",
     "RWzl5eB6EbU",
@@ -263,6 +264,12 @@
       "reason": "fuori dai limiti di durata",
       "kind": "regola",
       "date": "2026-11-16T19:01:26.646726+00:00"
+    },
+    "L7ri6JsakeA": {
+      "title": "Livestream with Kipp Davis",
+      "reason": "fuori dai limiti di durata",
+      "kind": "regola",
+      "date": "2026-11-26T07:00:59.520286+00:00"
     }
   },
   "falliti": {}

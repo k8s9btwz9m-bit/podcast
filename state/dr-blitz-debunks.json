@@ -1,6 +1,17 @@
 {
   "episodes": [
     {
+      "id": "ZbOtelx-M7Q",
+      "title": "Creationist starts explaining the rules of MAGIC",
+      "published": "2026-11-27T14:00:11+00:00",
+      "description": "I granted him magic for the sake of argument and apparently I still needed someone to do it. Recorded 11/12/2026.\n\n-----------------------------\n\nMAIN CHANNEL\nhttps://www.youtube.com/@blitzphd\n-----------------------------\nWEBSITE\nhttps://blitz.phd\n-----------------------------\nSUPPORT STREAM:\nhttps://cash.app/$blitzphd\nhttps://buymeacoffee.com/drblitzphd\n-----------------------------\nSOCIAL MEDIA:\nTikTok: https://www.tiktok.com/@blitzphd\nInstagram: https://www.instagram.com/blitzphd/\nDiscord: https://discord.com/invite/cj5ZFU6Afx\nLinktree: https://linktr.ee/drblitzphd\n\nSONG CREDIT:\nLyrics by: GretchenZ \nProduced by: DJ ARPY\nMusicians: Jamnik06,  Nektu, NobodyOnFire, Ray_Spike, Austin Sims.",
+      "file": "ZbOtelx-M7Q.mp3",
+      "image": "ZbOtelx-M7Q.jpg",
+      "chapters": 0,
+      "tagliati_s": 1,
+      "duration": 1388
+    },
+    {
       "id": "eAPFFPR3F9M",
       "title": "Nice guy Muslim thinks Ottomans were peaceful. So I listed wars",
       "published": "2026-11-26T14:00:16+00:00",
@@ -65,17 +76,6 @@
       "chapters": 0,
       "tagliati_s": 0,
       "duration": 1300
-    },
-    {
-      "id": "z6QMPz9qVRQ",
-      "title": "Muslim has GAPING HOLE in his argument",
-      "published": "2026-11-19T14:00:34+00:00",
-      "description": "Kizi really wanted to shove his god in that gape, huh? Recorded 11/2/2026.\n\n-----------------------------\n\nMAIN CHANNEL\nhttps://www.youtube.com/@blitzphd\n-----------------------------\nWEBSITE\nhttps://blitz.phd\n-----------------------------\nSUPPORT STREAM:\nhttps://cash.app/$blitzphd\nhttps://buymeacoffee.com/drblitzphd\n-----------------------------\nSOCIAL MEDIA:\nTikTok: https://www.tiktok.com/@blitzphd\nInstagram: https://www.instagram.com/blitzphd/\nDiscord: https://discord.com/invite/cj5ZFU6Afx\nLinktree: https://linktr.ee/drblitzphd\n\nSONG CREDIT:\nLyrics by: GretchenZ \nProduced by: DJ ARPY\nMusicians: Jamnik06,  Nektu, NobodyOnFire, Ray_Spike, Austin Sims.",
-      "file": "z6QMPz9qVRQ.mp3",
-      "image": "z6QMPz9qVRQ.jpg",
-      "chapters": 0,
-      "tagliati_s": 1,
-      "duration": 1156
     }
   ],
   "skipped": [
@@ -100,6 +100,7 @@
     "VH_82FJVdMQ",
     "WWS3W2KeNn0",
     "Wn8BoiLSLxA",
+    "XKjjtR50wtw",
     "XzCYyqTbiU0",
     "Y5XB2kO4hiQ",
     "YQ3Y6jJRo-Y",
@@ -220,6 +221,7 @@
     "uLRBn-fYqRU",
     "vzVNPH05Qes",
     "wcCcaeXTluQ",
+    "z6QMPz9qVRQ",
     "z9yXl5lXJjo",
     "zQL0vayKCcg",
     "zkiseTQeCX0"
@@ -248,6 +250,12 @@
       "reason": "fuori dai limiti di durata",
       "kind": "regola",
       "date": "2026-11-24T19:00:12.403343+00:00"
+    },
+    "XKjjtR50wtw": {
+      "title": "GOD vs. PHYSICIST - Debate Dr. Blitz [11/27/2026] [H]",
+      "reason": "fuori dai limiti di durata",
+      "kind": "regola",
+      "date": "2026-11-27T19:00:12.314218+00:00"
     }
   },
   "falliti": {}
